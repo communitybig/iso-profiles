@@ -77,7 +77,7 @@ biglinux-config
 ## Display manager
 lightdm
 lightdm-webkit2-greeter
-lightdm-webkit2-theme-biglinux
+lightdm-webkit2-theme-community
 
 ## Applications
 # manjaro-application-utility
@@ -183,7 +183,6 @@ sshfs  # remote filesystem browser
 
 ## Package management
 big-store
-biglinux-keyring
 biglinux-updates-tweaks
 pamac-updates-menu
 pamac-gtk3

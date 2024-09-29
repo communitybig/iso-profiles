@@ -10,4 +10,4 @@ biglinux-livecd
 biglinux-grub-restore
 memtest86+
 memtest86+-efi
-community-livecd-key
+#community-livecd-key

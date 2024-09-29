@@ -109,6 +109,11 @@ xz
 
 ### BIGLINUX
 biglinux-bash-config
+biglinux-keyring
+
+### COMMUNITY
+community-livecd-key
+community-keyring
 
 ## Visual/theme
 bigicons-papient
