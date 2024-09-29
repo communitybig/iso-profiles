@@ -200,7 +200,7 @@ usbasp-udev
 usbtinyisp-udev
 
 # Utilities
-big-cosmic-config
+comm-cosmic-config
 ds4-disable-led
 retroarch-tweaks
 

@@ -320,5 +320,5 @@ plasma-wayland-protocols
 source-highlight
 tesseract-data-eng
 tesseract-data-por
-wl-clipboard
+wl-clipboard-rs
 wl-mirror
