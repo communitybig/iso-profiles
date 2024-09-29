@@ -96,6 +96,7 @@ usbutils
 util-linux
 vi
 virtualbox-guest-utils
+vulkan-tools
 vkd3d
 wget
 which
