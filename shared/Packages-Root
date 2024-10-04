@@ -128,12 +128,12 @@ biglinux-neofetch
 big-preload
 
 ## Boot
-grub-theme-biglinux
+grub-theme-community
 timeshift
 grub-btrfs-timeshift
 grub-btrfs
 big-first-boot
-plymouth-theme-biglinux
+plymouth-theme-community
 update-grub
 
 ## Tweaks
