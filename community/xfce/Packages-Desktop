@@ -1,5 +1,5 @@
 # XFCE Applications
-atril
+#atril
 blueman
 brasero
 catfish
@@ -12,14 +12,16 @@ gnome-disk-utility
 guvcview
 guvcview-qt
 intltool
+kate
+konsole
 materiav2-gtk-theme
-mousepad
 mugshot
 mystiq
 numlockx
 network-manager-applet
 nm-connection-editor
 ocs-url
+okular
 #parole
 pavucontrol
 playerctl
@@ -64,7 +66,7 @@ xfce4-settings
 xfce4-smartbookmark-plugin
 xfce4-systemload-plugin
 xfce4-taskmanager
-xfce4-terminal
+#xfce4-terminal
 xfce4-time-out-plugin
 xfce4-timer-plugin
 xfce4-verve-plugin
