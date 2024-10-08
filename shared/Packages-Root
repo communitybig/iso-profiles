@@ -137,7 +137,7 @@ plymouth-theme-community
 update-grub
 
 ## Tweaks
-biglinux-name
+bigcommunity-name
 biglinux-l18n
 # faster-mkinitcpio
 biglinux-improve-compatibility
