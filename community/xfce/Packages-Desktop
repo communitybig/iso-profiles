@@ -16,6 +16,7 @@ intltool
 kate
 konsole
 materiav2-gtk-theme
+menulibre
 mugshot
 mystiq
 numlockx
@@ -32,6 +33,7 @@ sync-gnome-theme-to-qt
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
+thunar-shares-plugin
 thunar-volman
 thunarx-python
 tumbler
