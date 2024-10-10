@@ -12,10 +12,6 @@ KERNEL-broadcom-wl
 #KERNEL-rt3562sta
 #KERNEL-virtualbox-guest-modules
 #zfs-dkms
-libva-intel-driver
-libva-mesa-driver
-libva-vdpau-driver
->multilib lib32-libva-vdpau-driver
 libxaw
 libxpm
 libxvmc
@@ -39,10 +35,3 @@ libxvmc
 primus
 bumblebee
 nvidia-prime
-gtkmm3
-spice-vdagent
-vulkan-mesa-layers
-vulkan-virtio
-vulkan-icd-loader
-vulkan-nouveau
->multilib lib32-vulkan-nouveau
