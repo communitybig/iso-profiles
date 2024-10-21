@@ -5,6 +5,7 @@ brave-browser
 autoconf
 automake
 make
+glib2-devel
 
 # Fonts
 >extra noto-fonts-emoji
