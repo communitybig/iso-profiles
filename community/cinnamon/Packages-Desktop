@@ -190,7 +190,9 @@ usbasp-udev
 usbtinyisp-udev
 
 # Utilities
-big-cinnamon-config
+comm-cinnamon-config
+comm-shell-orchis
+comm-wallpapers-gnome
 ds4-disable-led
 retroarch-tweaks
 
