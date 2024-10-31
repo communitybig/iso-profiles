@@ -37,7 +37,7 @@ cinnamon-control-center
 cinnamon-remove-application
 cinnamon-sounds
 cinnamon-translations
-ptyxis
+gnome-console
 simple-scan
 sync-gnome-theme-to-qt # Pacote Biglinux
 xdg-user-dirs-gtk
