@@ -37,11 +37,11 @@ cinnamon-control-center
 cinnamon-remove-application
 cinnamon-sounds
 cinnamon-translations
-gnome-console
+gnome-terminal
 simple-scan
 sync-gnome-theme-to-qt # Pacote Biglinux
 xdg-user-dirs-gtk
-
+xed
 
 
 # Input Devices
