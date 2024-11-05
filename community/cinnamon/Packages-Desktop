@@ -38,11 +38,21 @@ cinnamon-remove-application
 cinnamon-sounds
 cinnamon-translations
 gnome-terminal
+nemo
+nemo-audio-tab
+nemo-emblems
+nemo-image-converter
+nemo-fileroller
+nemo-pastebin
+nemo-preview
+nemo-python
+nemo-seahorse
+nemo-share
+nemo-terminal
 simple-scan
 sync-gnome-theme-to-qt # Pacote Biglinux
 xdg-user-dirs-gtk
 xed
-
 
 # Input Devices
 xf86-input-elographics
