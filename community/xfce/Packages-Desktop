@@ -10,11 +10,10 @@ garcon
 gnome-online-accounts-gtk
 gnome-calculator
 gnome-disk-utility
+gnome-terminal
 guvcview
 guvcview-qt
 intltool
-kate
-konsole
 light-locker
 materiav2-gtk-theme
 menulibre
@@ -40,6 +39,7 @@ thunarx-python
 tumbler
 vlc
 # xfburn
+xed
 xfce4-appfinder
 xfce4-artwork
 xfce4-battery-plugin
