@@ -204,7 +204,7 @@ usbtinyisp-udev
 # Utilities
 comm-cinnamon-config
 comm-shell-orchis
-comm-wallpapers-gnome
+comm-wallpapers-cinnamon
 ds4-disable-led
 retroarch-tweaks
 
