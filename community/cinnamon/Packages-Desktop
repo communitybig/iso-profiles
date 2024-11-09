@@ -32,6 +32,7 @@ ttf-roboto-slab
 # CINNAMON Applications
 adw-gtk-theme
 cinnamon
+cinnamon-applet-cinnamenu
 cinnamon-desktop
 cinnamon-control-center
 cinnamon-remove-application
