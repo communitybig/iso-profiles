@@ -1,16 +1,15 @@
 # XFCE Applications
 #atril
 blueman
-brasero
 catfish
+evince
+eog
 exo
 ffmpegthumbnailer
-# fluent-icon-theme-git
 garcon
 gnome-online-accounts-gtk
 gnome-calculator
 gnome-disk-utility
-gnome-terminal
 guvcview
 guvcview-qt
 intltool
@@ -23,11 +22,9 @@ numlockx
 network-manager-applet
 nm-connection-editor
 ocs-url
-okular
 #parole
 pavucontrol
 playerctl
-ristretto
 simplescreenrecorder
 sync-gnome-theme-to-qt
 thunar
@@ -38,7 +35,6 @@ thunar-volman
 thunarx-python
 tumbler
 vlc
-# xfburn
 xed
 xfce4-appfinder
 xfce4-artwork
@@ -70,6 +66,7 @@ xfce4-settings
 xfce4-smartbookmark-plugin
 xfce4-systemload-plugin
 xfce4-taskmanager
+xfce4-terminal
 #xfce4-terminal
 xfce4-time-out-plugin
 xfce4-timer-plugin
