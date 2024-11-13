@@ -3,7 +3,6 @@
 blueman
 catfish
 evince
-eog
 exo
 ffmpegthumbnailer
 garcon
@@ -25,6 +24,7 @@ ocs-url
 #parole
 pavucontrol
 playerctl
+pix
 simplescreenrecorder
 sync-gnome-theme-to-qt
 thunar
