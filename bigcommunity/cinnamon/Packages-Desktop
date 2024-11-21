@@ -40,6 +40,7 @@ cinnamon-remove-application
 cinnamon-sounds
 cinnamon-translations
 gnome-calculator
+gnome-disk-utility
 gnome-screenshot
 gnome-system-monitor
 gnome-terminal
@@ -127,7 +128,6 @@ biglinux-webapps
 bigocrpdf
 dmidecode # for inxi -m output
 espeak-ng
-gdm
 htop
 inxi
 libappindicator-gtk3
