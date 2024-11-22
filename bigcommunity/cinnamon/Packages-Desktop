@@ -228,8 +228,8 @@ xorg-xinit
 xorg-xkill
 
 # Wayland
-# wayland-protocols
-# wayland-utils
+wayland-protocols
+wayland-utils
 
 # Miscellaneous
 libdnet
