@@ -210,3 +210,6 @@ xf86-video-voodoo
 open-vm-tools
 qemu-guest-agent
 virtualbox-guest-utils
+
+## Driver Wifi
+rtl88x2bu-dkms

@@ -184,12 +184,13 @@ lightdm-webkit2-theme-community
 android-tools
 big-store
 biglinux-systemd-swap
-biglinux-updates-tweaks
+# biglinux-updates-tweaks
 bluez-cups
 compsize
 debtap-mod
 hplip
 ipp-usb
+iso2usb
 manjaro-application-utility
 manjaro-printer
 pamac-updates-menu

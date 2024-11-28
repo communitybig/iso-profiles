@@ -126,11 +126,12 @@ zensu
 >extra fwupd
 android-tools
 big-store
-biglinux-updates-tweaks
+# biglinux-updates-tweaks
 bluez-cups
 compsize
 debtap-mod
 hplip
+iso2usb
 manjaro-application-utility
 manjaro-printer
 pamac-flatpak-plugin
