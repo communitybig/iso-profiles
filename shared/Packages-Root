@@ -211,5 +211,5 @@ open-vm-tools
 qemu-guest-agent
 virtualbox-guest-utils
 
-## Driver Wifi
+## Driver Wifi USB
 rtl88x2bu-dkms
