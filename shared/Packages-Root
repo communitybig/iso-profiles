@@ -183,7 +183,7 @@ lib32-vulkan-nouveau
 lib32-vulkan-radeon
 libva-intel-driver
 libva-mesa-driver
-libva-vdpau-driver
+# libva-vdpau-driver
 mesa-vdpau
 mhwd-biglinux
 spice-vdagent
