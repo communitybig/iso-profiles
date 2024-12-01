@@ -19,7 +19,6 @@ deepin-desktop-base
 deepin-desktop-schemas
 deepin-desktop-theme
 deepin-device-formatter
-deepin-dock
 deepin-draw
 deepin-editor
 deepin-file-manager
@@ -44,6 +43,7 @@ deepin-qt5platform-plugins
 deepin-screen-recorder
 # deepin-screensaver
 # deepin-screensaver-pp
+deepin-shell
 deepin-session
 deepin-session-shell
 deepin-session-ui
@@ -231,9 +231,10 @@ usbtinyisp-udev
 
 # Multilib
 >multilib lib32-libva-intel-driver
->multilib lib32-libva-mesa-driver
+>multilib lib32-mesa
 >multilib lib32-libva-vdpau-driver
 >multilib lib32-mesa-utils
+mesa
 lib32-fontconfig
 lib32-gettext
 lib32-glu

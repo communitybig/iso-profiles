@@ -36,10 +36,15 @@ cosmic-applets
 cosmic-bg
 cosmic-comp
 cosmic-files
+cosmic-greeter
 cosmic-icon-theme
 cosmic-launcher
+cosmic-notifications
+cosmic-osd
+cosmic-panel
 cosmic-randr
 cosmic-screenshot
+cosmic-session
 cosmic-settings
 cosmic-settings-daemon
 cosmic-store
@@ -60,9 +65,10 @@ xf86-input-vmmouse
 
 # Multilib
 >multilib lib32-libva-intel-driver
->multilib lib32-libva-mesa-driver
+>multilib lib32-mesa
 >multilib lib32-libva-vdpau-driver
 >multilib lib32-mesa-utils
+mesa
 lib32-fontconfig
 lib32-gettext
 lib32-glu
