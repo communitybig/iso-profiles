@@ -212,4 +212,4 @@ qemu-guest-agent
 virtualbox-guest-utils
 
 ## Driver Wifi USB
-rtl88x2bu-dkms
+#rtl88x2bu-dkms
