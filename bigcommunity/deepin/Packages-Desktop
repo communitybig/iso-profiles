@@ -180,8 +180,8 @@ sysctl-network
 usb_modeswitch
 
 # Utilities
-big-dde-config
-biglinux-wallpapers-dde
+#comm-dde-config
+
 ds4-disable-led
 retroarch-tweaks
 
