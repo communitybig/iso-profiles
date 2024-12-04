@@ -30,7 +30,6 @@ ttf-roboto-mono
 ttf-roboto-slab
 
 # COSMIC Applications
-adw-gtk-theme
 cosmic-app-library
 cosmic-applets
 cosmic-bg
@@ -54,8 +53,8 @@ cosmic-wallpapers
 cosmic-workspaces
 xdg-desktop-portal-cosmic
 simple-scan
-sync-gnome-theme-to-qt # Pacote Biglinux
-xdg-user-dirs-gtk
+#sync-gnome-theme-to-qt # Pacote Biglinux
+# xdg-user-dirs-gtk
 
 # Input Devices
 xf86-input-elographics
@@ -117,18 +116,16 @@ libreoffice-fresh-pt-br
 >extra python-pip
 >extra python-pyqt5
 appimagelauncher
-appmenu-gtk-module
+# appmenu-gtk-module
 auto-tweaks-browser # Pacote Biglinux
 biglinux-mime
 biglinux-webapps
 bigocrpdf
 dmidecode # for inxi -m output
 espeak-ng
-gdm
 htop
 inxi
-libappindicator-gtk3
-orca
+# libappindicator-gtk3
 p7zip  # 7Z format support
 perl-file-mimeinfo
 pipewire-biglinux-config-git
@@ -137,7 +134,6 @@ python-pysmbc # SMB browser support
 speech-dispatcher
 tts-biglinux
 unarchiver  # RAR format support
-xdg-desktop-portal-gtk
 zensu
 
 ## Display manager
@@ -173,7 +169,7 @@ virtualbox-guest-utils
 # Themes and Icons
 bibata-cursor-theme
 breeze-icons
-gtk-engine-murrine
+# gtk-engine-murrine
 qadwaitadecorations-qt6
 qt6-svg
 bigicons-papient
@@ -206,7 +202,7 @@ usbasp-udev
 usbtinyisp-udev
 
 # Utilities
-comm-cosmic-config
+# comm-cosmic-config
 ds4-disable-led
 retroarch-tweaks
 
@@ -235,18 +231,6 @@ libmspack
 # Additional Packages
 fatresize
 gamemode
-grilo-plugins
-gvfs
-gvfs-afc
-gvfs-dnssd
-gvfs-goa
-gvfs-google
-gvfs-gphoto2
-gvfs-mtp
-gvfs-nfs
-gvfs-onedrive
-gvfs-smb
-gvfs-wsdd
 manjaro-settings-samba
 mtools
 mtpfs
