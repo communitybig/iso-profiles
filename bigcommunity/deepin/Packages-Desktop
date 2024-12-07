@@ -32,7 +32,6 @@ deepin-menu
 deepin-movie
 deepin-music
 deepin-network-core
-deepin-network-utils
 deepin-picker
 deepin-polkit-agent
 deepin-polkit-agent-ext-gnomekeyring
@@ -180,8 +179,8 @@ sysctl-network
 usb_modeswitch
 
 # Utilities
-big-dde-config
-biglinux-wallpapers-dde
+#comm-dde-config
+
 ds4-disable-led
 retroarch-tweaks
 
@@ -232,7 +231,7 @@ usbtinyisp-udev
 # Multilib
 >multilib lib32-libva-intel-driver
 >multilib lib32-mesa
->multilib lib32-libva-vdpau-driver
+#>multilib lib32-libva-vdpau-driver
 >multilib lib32-mesa-utils
 mesa
 lib32-fontconfig
