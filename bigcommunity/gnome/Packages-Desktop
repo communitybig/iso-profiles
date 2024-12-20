@@ -204,6 +204,7 @@ thermald
 virtualbox-guest-utils
 
 # Themes and Icons
+comm-shell-orchis
 bibata-cursor-theme
 breeze-icons
 gnome-themes-extra
