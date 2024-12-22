@@ -233,7 +233,7 @@ biglinux-webapps
 bigocrpdf
 libappindicator-gtk3
 perl-file-mimeinfo
-pipewire-biglinux-config-git
+pipewire-biglinux-config
 tts-biglinux
 xdg-user-dirs
 xdg-utils
