@@ -126,7 +126,7 @@ espeak-ng
 htop
 inxi
 # libappindicator-gtk3
-p7zip  # 7Z format support
+7zip  # 7Z format support
 perl-file-mimeinfo
 pipewire-biglinux-config
 powertop
