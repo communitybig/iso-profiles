@@ -60,7 +60,6 @@ brave-browser
 rustdesk-bin
 
 ## Themes
-adw-gtk3
 adw-gtk-theme
 bibata-cursor-theme
 gtk-engines
@@ -71,7 +70,7 @@ qogir-gtk-theme
 qogir-icon-theme
 
 ## BigLinux Specific Configurations XFCE
-big-wmaker-config
+comm-wmaker-config
 biglinux-config
 
 ## Display manager
