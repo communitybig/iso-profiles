@@ -31,6 +31,7 @@ ttf-roboto-slab
 
 # CINNAMON Applications
 adw-gtk-theme
+blueberry
 celluloid
 cinnamon
 cinnamon-applet-cinnamenu
@@ -39,8 +40,10 @@ cinnamon-control-center
 cinnamon-remove-application
 cinnamon-sounds
 cinnamon-translations
+folder-color-nemo
 gnome-calculator
 gnome-disk-utility
+gnome-online-accounts
 gnome-screenshot
 gnome-system-monitor
 gnome-terminal
