@@ -125,7 +125,6 @@ biglinux-metapackage
 biglinux-driver-manager
 biglinux-nano-config
 biglinux-vim-config
-biglinux-neofetch
 big-preload
 
 ## Boot
