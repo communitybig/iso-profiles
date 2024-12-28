@@ -1,7 +1,6 @@
 ## Applications
 autoconf
 atril
-big-wmaker-config
 bluedevil
 catfish
 exo
@@ -60,7 +59,6 @@ brave-browser
 rustdesk-bin
 
 ## Themes
-adw-gtk3
 adw-gtk-theme
 bibata-cursor-theme
 gtk-engines
@@ -71,7 +69,7 @@ qogir-gtk-theme
 qogir-icon-theme
 
 ## BigLinux Specific Configurations XFCE
-big-wmaker-config
+comm-wmaker-config
 biglinux-config
 
 ## Display manager
@@ -116,7 +114,7 @@ ttf-lato
 ttf-ubuntu-font-family
 
 # visual
-biglinux-wallpapers-xfce
+comm-wallpapers-xfce
 
 ## Games
 retroarch-tweaks
@@ -233,7 +231,7 @@ biglinux-webapps
 bigocrpdf
 libappindicator-gtk3
 perl-file-mimeinfo
-pipewire-biglinux-config-git
+pipewire-biglinux-config
 tts-biglinux
 xdg-user-dirs
 xdg-utils

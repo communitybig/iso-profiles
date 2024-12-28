@@ -11,7 +11,7 @@ appmenu-gtk-module
 # Audio Tools
 pavucontrol-qt
 phonon-qt6-vlc
-pipewire-biglinux-config-git
+pipewire-biglinux-config
 
 # Browsers
 brave-browser
