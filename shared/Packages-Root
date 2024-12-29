@@ -186,6 +186,7 @@ lib32-mesa
 # libva-vdpau-driver
 mesa-vdpau
 mhwd-biglinux
+switcheroo-control
 
 ## Virtualization Support
 open-vm-tools
