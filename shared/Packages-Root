@@ -139,10 +139,11 @@ update-grub
 ## Tweaks
 bigcommunity-name
 biglinux-l18n
-# faster-mkinitcpio
+faster-mkinitcpio
+biglinux-hibernate-in-swapfile-btrfs
 biglinux-improve-compatibility
 big-mount
-# biglinux-systemd-swap
+biglinux-systemd-swap
 dbus-broker-enable
 power-profiles-daemon-biglinux
 auto-rules-io
@@ -173,22 +174,20 @@ wireplumber
 chmlib
 tesseract-data-spa
 
-## Video and Driver Support Biglinux
+## Video and Driver Support
 biglinux-vaapi
-#gtkmm3
-#lib32-libva-vdpau-driver
-lib32-mesa-vdpau
-#lib32-vulkan-intel
-#lib32-vulkan-nouveau
-#lib32-vulkan-radeon
-#libva-intel-driver
-lib32-mesa
-# libva-vdpau-driver
+libva-intel-driver
+libva-mesa-driver
 mesa-vdpau
 mhwd-biglinux
 switcheroo-control
+vulkan-intel
+vulkan-mesa-layers
+vulkan-radeon
 
 ## Virtualization Support
 open-vm-tools
 qemu-guest-agent
 virtualbox-guest-utils
+spice-vdagent
+
