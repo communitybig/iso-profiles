@@ -124,7 +124,7 @@ biglinux-metapackage
 ## BigLinux Specific Configurations
 biglinux-driver-manager
 biglinux-nano-config
-biglinux-neofetch
+biglinux-vim-config
 big-preload
 
 ## Boot
@@ -139,10 +139,11 @@ update-grub
 ## Tweaks
 bigcommunity-name
 biglinux-l18n
-# faster-mkinitcpio
+faster-mkinitcpio
+biglinux-hibernate-in-swapfile-btrfs
 biglinux-improve-compatibility
 big-mount
-# biglinux-systemd-swap
+biglinux-systemd-swap
 dbus-broker-enable
 power-profiles-daemon-biglinux
 auto-rules-io
@@ -173,43 +174,20 @@ wireplumber
 chmlib
 tesseract-data-spa
 
-## Video and Driver Support Biglinux
+## Video and Driver Support
 biglinux-vaapi
-gtkmm3
-#lib32-libva-vdpau-driver
-lib32-mesa-vdpau
-lib32-vulkan-intel
-lib32-vulkan-nouveau
-lib32-vulkan-radeon
 libva-intel-driver
-lib32-mesa
-# libva-vdpau-driver
+libva-mesa-driver
 mesa-vdpau
 mhwd-biglinux
-spice-vdagent
-vulkan-icd-loader
+switcheroo-control
 vulkan-intel
 vulkan-mesa-layers
-vulkan-nouveau
 vulkan-radeon
-vulkan-swrast
-vulkan-virtio
-xf86-input-vmmouse
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-dummy
-xf86-video-fbdev
-xf86-video-intel
-xf86-video-nouveau
-xf86-video-sisusb
-xf86-video-vesa
-xf86-video-vmware
-xf86-video-voodoo
 
 ## Virtualization Support
 open-vm-tools
 qemu-guest-agent
 virtualbox-guest-utils
+spice-vdagent
 
-## Driver Wifi USB
-#rtl88x2bu-dkms

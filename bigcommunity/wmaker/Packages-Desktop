@@ -240,6 +240,7 @@ zensu
 ## Xorg Server and Graphics
 >multilib lib32-libva-intel-driver
 >multilib lib32-mesa
+>multilib lib32-mesa-vdpau
 #>multilib lib32-libva-vdpau-driver
 libva-intel-driver
 mesa
