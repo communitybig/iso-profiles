@@ -137,6 +137,7 @@ plymouth-theme-community
 update-grub
 
 ## Tweaks
+auto-unlock-pacman
 bigcommunity-name
 biglinux-l18n
 faster-mkinitcpio
