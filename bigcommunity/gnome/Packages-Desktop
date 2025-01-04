@@ -175,10 +175,59 @@ pipewire-biglinux-config
 powertop
 python-pysmbc # SMB browser support
 speech-dispatcher
-tts-biglinux
 unarchiver  # RAR format support
 xdg-desktop-portal-gtk
 zensu
+
+# TTS rhvoice
+tts-biglinux
+rhvoice-voice-leticia-f123
+rhvoice-brazilian-portuguese-complementary-dict-biglinux
+rhvoice-voice-evgeniy-eng
+
+# TTS piper
+piper-tts-bin
+piper-voices-common
+
+# languages piper
+piper-voices-ar-JO
+piper-voices-ca-ES  
+piper-voices-cs-CZ
+piper-voices-cy-GB
+piper-voices-da-DK
+piper-voices-de-DE
+piper-voices-el-GR
+piper-voices-en-GB
+piper-voices-en-US
+piper-voices-es-ES
+piper-voices-es-MX
+piper-voices-fa-IR
+piper-voices-fi-FI
+piper-voices-fr-FR
+piper-voices-hu-HU
+piper-voices-is-IS
+piper-voices-it-IT
+piper-voices-ka-GE
+piper-voices-kk-KZ
+piper-voices-lb-LU
+piper-voices-ne-NP
+piper-voices-nl-BE
+piper-voices-nl-NL
+piper-voices-no-NO
+piper-voices-pl-PL
+piper-voices-pt-BR
+piper-voices-pt-PT
+piper-voices-ro-RO
+piper-voices-ru-RU
+piper-voices-sk-SK
+piper-voices-sl-SI
+piper-voices-sr-RS
+piper-voices-sv-SE
+piper-voices-sw-CD
+piper-voices-tr-TR
+piper-voices-uk-UA
+piper-voices-vi-VN
+piper-voices-zh-CN
 
 # System Utilities
 >extra fwupd
