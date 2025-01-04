@@ -175,10 +175,15 @@ pipewire-biglinux-config
 powertop
 python-pysmbc # SMB browser support
 speech-dispatcher
-tts-biglinux
 unarchiver  # RAR format support
 xdg-desktop-portal-gtk
 zensu
+
+# TTS rhvoice
+tts-biglinux
+rhvoice-voice-leticia-f123
+rhvoice-brazilian-portuguese-complementary-dict-biglinux
+rhvoice-voice-evgeniy-eng
 
 # System Utilities
 >extra fwupd
