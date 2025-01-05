@@ -201,6 +201,7 @@ manjaro-application-utility
 manjaro-printer
 pamac-updates-menu
 pamac-flatpak-plugin
+qt5-quickcontrols2
 qt6-wayland
 rpmtoarch
 sane-airscan
