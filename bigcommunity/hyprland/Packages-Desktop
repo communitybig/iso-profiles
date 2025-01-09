@@ -11,8 +11,12 @@ pavucontrol
 playerctl
 tumbler
 xarchiver
+blueman
+brightnessctl
+
 # File Manager and Plugins
 dolphin
+
 # Hyprland Core Components
 hyprland
 hyprcursor
@@ -23,10 +27,19 @@ hyprlock
 hyprutils
 hyprwayland-scanner
 xdg-desktop-portal-hyprland
+
 # Hyprland Additional Utilities
 nwg-displays
 nwg-dock-hyprland
 nwg-panel
+swaylock-effects-git
+wlogout
+grimblast-git
+hyprpicker
+slurp
+swappy
+cliphist
+
 # Wayland Native Replacements
 #alacritty
 kitty
@@ -39,6 +52,8 @@ swayidle
 swaylock
 waybar
 wofi
+hyde-cli-git
+
 # Legacy Applications
 catfish
 menulibre
@@ -47,6 +62,13 @@ pix
 simplescreenrecorder
 vlc
 xed
+polkit-gnome
+pacman-contrib
+python-pyamdgpuinfo
+parallel
+jq
+qt5-imageformats
+kde-cli-tools
 
 # Games
 gnuchess
@@ -100,6 +122,14 @@ qt6-svg
 bigicons-papient
 lsd
 swww
+nwg-look
+qt5ct
+qt6ct
+kvantum
+kvantum-qt5
+qt5-wayland
+qt6-wayland
+hyde-cli-git
 
 # Utilities
 biglinux-settings
@@ -113,6 +143,9 @@ imagemagick
 ffmpegthumbs
 libnotify
 udiskie
+biglinux-vim-config
+kate
+git
 
 # System Configuration
 >extra python-pillow
