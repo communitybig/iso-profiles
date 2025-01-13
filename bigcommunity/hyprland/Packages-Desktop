@@ -25,6 +25,7 @@ hypridle
 hyprland-qtutils
 hyprlock
 hyprutils
+hyprshade
 hyprwayland-scanner
 xdg-desktop-portal-hyprland
 
@@ -134,8 +135,8 @@ hyprpaper
 
 # Utilities
 biglinux-settings
-comm-wallpapers-xfce
-comm-xfce-config
+comm-wallpapers-hyprland
+comm-hyprland-config
 ds4-disable-led
 retroarch-tweaks
 fastfetch
