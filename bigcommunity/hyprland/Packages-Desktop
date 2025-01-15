@@ -321,8 +321,6 @@ xf86-input-vmmouse
 >multilib lib32-mesa-vdpau
 #>multilib lib32-libva-vdpau-driver
 >multilib lib32-mesa-utils
-nvidia-utils
-#lib32-nvidia-utils
 mesa
 lib32-fontconfig
 lib32-gettext
