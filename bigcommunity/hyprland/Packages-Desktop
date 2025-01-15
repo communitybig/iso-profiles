@@ -20,9 +20,9 @@ dolphin
 # Hyprland Core Components
 hyprland
 hyprcursor
-hyprgraphics
+hyprgraphics-git
 hypridle
-hyprland-qtutils
+hyprland-qtutils-git
 hyprlock
 hyprutils
 hyprshade
