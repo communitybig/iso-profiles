@@ -20,11 +20,11 @@ dolphin
 # Hyprland Core Components
 hyprland
 hyprcursor
-hyprgraphics-git
+#hyprgraphics-git
 hypridle
-hyprland-qtutils-git
+#hyprland-qtutils-git
 hyprlock
-hyprutils
+#hyprutils
 hyprshade
 hyprwayland-scanner
 xdg-desktop-portal-hyprland
@@ -33,7 +33,7 @@ xdg-desktop-portal-hyprland
 nwg-displays
 nwg-dock-hyprland
 nwg-panel
-swaylock-effects-git
+#swaylock-effects-git
 wlogout
 grimblast-git
 hyprpicker
