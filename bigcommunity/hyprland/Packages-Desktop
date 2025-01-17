@@ -70,7 +70,6 @@ parallel
 jq
 qt5-imageformats
 kde-cli-tools
-kconfig
 
 # Games
 gnuchess
