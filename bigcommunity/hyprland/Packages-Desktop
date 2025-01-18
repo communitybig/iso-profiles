@@ -214,6 +214,7 @@ virtualbox-guest-utils
 # Wayland
 #wayland-protocols
 #wayland-utils
+egl-wayland
 
 # Miscellaneous
 libdnet
