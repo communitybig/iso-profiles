@@ -183,7 +183,7 @@ zensu
 #lightdm-webkit2-greeter
 #lightdm-webkit2-theme-community
 sddm
-sddm-theme-biglinux
+#sddm-theme-biglinux
 
 # System Utilities
 >extra fwupd
