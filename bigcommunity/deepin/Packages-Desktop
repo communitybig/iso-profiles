@@ -101,7 +101,7 @@ libreoffice-fresh-pt-br
 appimagelauncher
 appmenu-gtk-module
 auto-tweaks-browser # Pacote Biglinux
-biglinux-mime
+#biglinux-mime
 biglinux-webapps
 bigocrpdf
 dmidecode # for inxi -m output
