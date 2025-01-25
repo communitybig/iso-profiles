@@ -1,16 +1,15 @@
-# Hyprland Applications
-#Essential System Utilities
+### Hyprland Applications ###
+# Essential System Utilities
 blueberry
 ffmpegthumbnailer
 gnome-disk-utility
-light-locker
+hyprlock
 network-manager-applet
 nm-connection-editor
 numlockx
 pavucontrol
 playerctl
 tumbler
-xarchiver
 blueman
 brightnessctl
 
@@ -20,11 +19,9 @@ dolphin
 # Hyprland Core Components
 hyprland
 hyprcursor
-#hyprgraphics-git
 hypridle
-#hyprland-qtutils-git
 hyprlock
-#hyprutils
+hyprutils
 hyprshade
 hyprwayland-scanner
 xdg-desktop-portal-hyprland
@@ -43,6 +40,7 @@ cliphist
 
 # Wayland Native Replacements
 #alacritty
+fuzzel
 kitty
 dunst
 grim
@@ -56,20 +54,17 @@ wofi
 hyde-cli-git
 
 # Legacy Applications
-catfish
-menulibre
 mugshot
 pix
-simplescreenrecorder
 vlc
-xed
+kate
 polkit-gnome
-pacman-contrib
-python-pyamdgpuinfo
-parallel
-jq
+#pacman-contrib
+#python-pyamdgpuinfo
+#parallel
+#jq
 qt5-imageformats
-kde-cli-tools
+#kde-cli-tools
 
 # Games
 gnuchess
@@ -114,8 +109,7 @@ libreoffice-fresh-pt-br
 # Themes and Icons
 adw-gtk-theme
 bibata-cursor-theme
-breeze-icons
-conky-manager2-git
+#breeze-icons
 gtk-engine-murrine
 gtk-engines
 qadwaitadecorations-qt6
@@ -179,11 +173,8 @@ xdg-user-dirs-gtk
 zensu
 
 ## Display manager
-#lightdm
-#lightdm-webkit2-greeter
-#lightdm-webkit2-theme-community
 sddm
-#sddm-theme-biglinux
+sddm-theme-biglinux
 
 # System Utilities
 >extra fwupd
@@ -303,20 +294,6 @@ usbtinyisp-udev
 # Virtualization
 bluez-utils
 sshfs  # remote filesystem browser
-
-# Xorg
-numlockx
-xorg-mkfontscale
-xorg-server
-xorg-twm
-xorg-xinit
-xorg-xkill
-
-# Input Devices
-xf86-input-elographics
-xf86-input-evdev
-xf86-input-synaptics
-xf86-input-vmmouse
 
 # Multilib
 >multilib lib32-libva-intel-driver
