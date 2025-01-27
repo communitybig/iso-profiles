@@ -43,7 +43,8 @@ cinnamon-translations
 folder-color-nemo
 gnome-calculator
 gnome-disk-utility
-gnome-online-accounts
+gnome-keyring
+gnome-online-accounts-gtk
 gnome-screenshot
 gnome-system-monitor
 gnome-terminal
@@ -63,6 +64,12 @@ pix
 simple-scan
 simplescreenrecorder
 sync-gnome-theme-to-qt # Pacote Biglinux
+touchegg
+xapp-appimage-thumbnailer
+xapp-epub-thumbnailer
+xapp-gimp-thumbnailer
+xapp-jxl-thumbnailer
+xapp-thumbnailers-common
 xdg-user-dirs-gtk
 xed
 
