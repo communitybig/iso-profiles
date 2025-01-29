@@ -44,7 +44,6 @@ mhwd
 mhwd-db
 mkinitcpio-openswap
 nano
-#nano-syntax-highlighting
 networkmanager
 nfs-utils
 ntfs-3g
@@ -69,10 +68,8 @@ xfsprogs
 plymouth
 plymouth-theme-community
 comm-skel
-pyenv
 grub-theme-community
 #bigcontrolcenter-base
-harbour-bin
 gitrepo
 tree
 duf
@@ -85,6 +82,7 @@ dialog
 #shellcheck
 pacman-contrib
 gettext
+fastfetch
 
 #FIRMWARE
 rtl8821ce-dkms-git
@@ -97,10 +95,12 @@ upd72020x-fw
 nginx
 nginx-mod-http-xslt-filter
 
-#SSH SERVER
-openssh
+#keyring
 community-livecd-key
 community-keyring
+
+#SSH SERVER
+openssh
 tmate
 
 # APPS chili
@@ -108,3 +108,5 @@ chili-nano-config
 chili-install
 chili-utils
 chili-clonedisk
+harbour-bin
+
