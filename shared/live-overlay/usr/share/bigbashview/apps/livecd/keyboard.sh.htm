@@ -1,0 +1,159 @@
+#!/bin/bash
+#################################################
+#  Authors: 
+#    - Bruno Goncalves (www.biglinux.com.br) 
+#    - Rafael Ruscher (rruscher@gmail.com)  
+#  Date: 2022/08/19
+#  
+#  Description: BigLinux Control Center - Keyboard Layout Configuration
+#  
+#  License: GPL V2 or greater
+#################################################
+
+# System language configuration
+export LANGUAGE=$language.UTF-8
+export LANG=$language.UTF-8
+
+# Save language and keyboard preferences
+echo "$language" > /tmp/big_language
+echo "$keyboard" > /tmp/big_keyboard
+
+# Update system environment variables
+sudo tee -a /etc/environment &>/dev/null << EOF
+LANGUAGE=$language.UTF-8
+LANG=$language.UTF-8
+LC_MESSAGES=$language.UTF-8
+EOF
+
+# Configure system timezone and time sync
+timedatectl set-timezone $timezone </dev/null &>/dev/null &
+timedatectl set-ntp 1 </dev/null &>/dev/null &
+
+# Set system locale
+localectl set-locale ${language}.UTF-8 </dev/null &>/dev/null &
+
+# Run checksum verification in background with low priority
+nice -n+20 ionice -c 3 ./biglinux-verify-md5sum.sh > /dev/null 2>&1 &
+
+# Configure translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=biglinux-livecd
+
+# Handle US keyboard layout directly
+if [ "$keyboard" = "us" ]; then
+    setxkbmap $keyboard &
+    echo '<body onload=window.location="desktop.sh.htm">'
+    exit
+fi
+
+# Translation variable
+SELECT_KEYBOARD=$"Choose your keyboard layout:"
+
+# Generate HTML content
+cat << EOF
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Project configuration -->
+    <script>
+        const projectName = 'biglinux-livecd';
+    </script>
+    
+    <!-- Include generic header -->
+    $(cat /usr/share/bigbashview/framework/html/genericHeader.html)
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>$SELECT_KEYBOARD</title>
+</head>
+<body x-data="navigation()">
+    <!-- Top navigation bar -->
+    <nav class="center-align top-bar padding">
+        <i class="icon-menu icon-static" id="language-icon">language_chinese_dayi</i>
+        <img class="logo-image" src="/usr/share/bigbashview/apps/livecd/icon-logo-community.png" alt="Community Logo">
+        <i class="icon-menu icon-fade" id="keyboard-icon">keyboard</i>
+    </nav>
+
+    <!-- Main content -->
+    <div class="center-align">
+        <h5 class="small center-align large-margin large-padding">$SELECT_KEYBOARD</h5>
+        
+        <!-- Keyboard layout options -->
+        <a href="desktop.sh.htm?keyboard=$keyboard" id="link1">
+            <button class="tertiary margin large" id="button1">${keyboard^^}</button>
+        </a>
+        <a href="desktop.sh.htm?keyboard=us\(intl\)" id="link2">
+            <button class="tertiary margin large" id="button2">US</button>
+        </a>
+        
+        <!-- Keyboard layout image -->
+        <p><img src="keyboard.svg" width="256" alt="Keyboard Layout"></p>
+    </div>
+    
+    <!-- Keyboard navigation script -->
+    <script>
+        function navigation() {
+            return {
+                currentFocus: 0,
+                links: ['link1', 'link2'],
+                
+                // Initialize navigation
+                init() {
+                    this.highlightCurrent();
+                    
+                    window.addEventListener('keydown', (event) => {
+                        if (event.key === 'ArrowLeft') {
+                            event.preventDefault();
+                            this.moveFocus(1);
+                        } else if (event.key === 'ArrowRight') {
+                            event.preventDefault();
+                            this.moveFocus(-1);
+                        } else if (event.key === 'Enter') {
+                            event.preventDefault();
+                            this.activateLink();
+                        }
+                    });
+                },
+                
+                // Handle focus movement
+                moveFocus(step) {
+                    this.removeHighlight();
+                    this.currentFocus = (this.currentFocus + step + this.links.length) % this.links.length;
+                    this.highlightCurrent();
+                },
+                
+                // Highlight current selection
+                highlightCurrent() {
+                    const currentElement = document.getElementById(this.links[this.currentFocus]).querySelector('button');
+                    currentElement.focus();
+                    currentElement.classList.add('highlight');
+                },
+                
+                // Remove highlight from current selection
+                removeHighlight() {
+                    const currentElement = document.getElementById(this.links[this.currentFocus]).querySelector('button');
+                    currentElement.classList.remove('highlight');
+                },
+                
+                // Activate selected link
+                activateLink() {
+                    document.getElementById(this.links[this.currentFocus]).click();
+                }
+            }
+        }
+    </script>
+    
+    <!-- Icon initialization script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageIcon = document.getElementById('language-icon');
+            const keyboardIcon = document.getElementById('keyboard-icon');
+            
+            languageIcon.classList.add('icon-static');
+            keyboardIcon.classList.add('icon-fade');
+        });
+    </script>
+</body>
+</html>
+EOF
