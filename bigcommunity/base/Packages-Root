@@ -68,6 +68,9 @@ xfsprogs
 plymouth
 plymouth-theme-community
 comm-skel
+bigcommunity-name
+biglinux-bash-config
+bash-completion
 grub-theme-community
 #bigcontrolcenter-base
 gitrepo
