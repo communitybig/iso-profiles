@@ -143,6 +143,7 @@ biglinux-l18n
 faster-mkinitcpio
 biglinux-hibernate-in-swapfile-btrfs
 biglinux-improve-compatibility
+comm-improve-compatibility
 big-mount
 biglinux-systemd-swap
 dbus-broker-enable
