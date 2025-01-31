@@ -67,9 +67,9 @@ xfsprogs
 ###########################################
 plymouth
 plymouth-theme-community
-comm-skel
+comm-base-config
+grc-rs
 bigcommunity-name
-biglinux-bash-config
 blesh-git
 bash-completion
 grub-theme-community
