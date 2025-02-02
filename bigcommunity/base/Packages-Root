@@ -4,6 +4,9 @@ glibc-locales
 KERNEL
 
 # Manjaro
+#manjaro-release
+manjaro-system
+#manjaro-zsh-config
 acpi
 acpid
 b43-fwcutter
@@ -50,9 +53,6 @@ less
 logrotate
 man-db
 man-pages
-#manjaro-release
-#manjaro-system
-#manjaro-zsh-config
 mhwd
 mhwd-db
 mkinitcpio-openswap
