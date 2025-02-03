@@ -54,8 +54,8 @@ less
 logrotate
 man-db
 man-pages
-mhwd
-mhwd-db
+#mhwd
+#mhwd-db
 mkinitcpio-openswap
 networkmanager
 wpa_supplicant
@@ -78,11 +78,11 @@ grc-rs
 blesh-git
 
 #FIRMWARE
-rtl8821ce-dkms-git
-rtl8821au-dkms-git
-rtl8814au-dkms-git
-broadcom-bt-firmware-git
-upd72020x-fw
+#rtl8821ce-dkms-git
+#rtl8821au-dkms-git
+#rtl8814au-dkms-git
+#broadcom-bt-firmware-git
+#upd72020x-fw
 
 #HTTP SERVER
 nginx
