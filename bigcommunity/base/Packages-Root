@@ -122,6 +122,7 @@ pacman-contrib
 gettext
 fastfetch
 ncdu
+archinstall
 #harbour-bin
 #shellcheck
 
