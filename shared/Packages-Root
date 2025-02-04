@@ -115,6 +115,9 @@ biglinux-keyring
 ### COMMUNITY
 community-keyring
 
+### CHILI
+chili-utils
+
 ## Visual/theme
 bigicons-papient
 biglinux-base-icons
