@@ -126,7 +126,8 @@ biglinux-metapackage
 
 ## BigLinux Specific Configurations
 biglinux-driver-manager
-biglinux-nano-config
+#biglinux-nano-config
+chili-nano-config
 biglinux-vim-config
 big-preload
 
