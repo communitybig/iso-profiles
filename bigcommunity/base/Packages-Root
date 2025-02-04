@@ -106,7 +106,8 @@ chili-clonedisk
 # UTILS
 rsync
 nano
-vi
+#vi
+vim
 which
 gitrepo
 tree
