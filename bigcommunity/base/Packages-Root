@@ -108,6 +108,7 @@ rsync
 nano
 #vi
 vim
+biglinux-vim-config   # Leonardo
 which
 gitrepo
 tree
