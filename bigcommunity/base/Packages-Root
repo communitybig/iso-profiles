@@ -128,3 +128,4 @@ ncdu
 #shellcheck
 yay
 cups
+pyenv
