@@ -129,6 +129,7 @@ ncdu
 yay
 cups
 pyenv
-pkgfile  #command-not-found
+pkgfile             #command-not-found
 docker
+comm-docker-config  # Leonardo
 fakeroot
