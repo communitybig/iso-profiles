@@ -131,3 +131,4 @@ cups
 pyenv
 pkgfile  #command-not-found
 docker
+fakeroot
