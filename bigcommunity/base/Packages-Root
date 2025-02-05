@@ -129,5 +129,5 @@ ncdu
 yay
 cups
 pyenv
-pkfile  #command-not-found
+pkgfile  #command-not-found
 docker
