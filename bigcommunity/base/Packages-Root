@@ -132,4 +132,7 @@ pyenv
 pkgfile             #command-not-found
 docker
 comm-docker-config  # Leonardo
-fakeroot
+sysstat             # Leonardo
+fakeroot            # Leonardo
+sshfs
+cifs-utils
