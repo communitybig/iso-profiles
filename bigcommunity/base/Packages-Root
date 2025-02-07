@@ -137,3 +137,5 @@ sysstat             # Leonardo
 fakeroot            # Leonardo
 sshfs
 cifs-utils
+lsof
+wireless_tools
