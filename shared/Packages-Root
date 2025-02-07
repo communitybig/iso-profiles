@@ -111,9 +111,14 @@ xz
 ### BIGLINUX
 biglinux-bash-config
 biglinux-keyring
+biglinux-driver-manager
+#biglinux-nano-config
+biglinux-vim-config
+big-preload
 
 ### COMMUNITY
 community-keyring
+chili-nano-config
 
 ### CHILI
 chili-utils
@@ -123,13 +128,6 @@ bigicons-papient
 biglinux-base-icons
 biglinux-apps-rename
 biglinux-metapackage
-
-## BigLinux Specific Configurations
-biglinux-driver-manager
-#biglinux-nano-config
-chili-nano-config
-biglinux-vim-config
-big-preload
 
 ## Boot
 grub-theme-community
@@ -196,4 +194,7 @@ open-vm-tools
 qemu-guest-agent
 virtualbox-guest-utils
 spice-vdagent
+
+## Others
+fastfetch
 
