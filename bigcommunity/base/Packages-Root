@@ -17,7 +17,8 @@ btrfs-progs
 xfsprogs
 dosfstools
 e2fsprogs
-exfatprogs
+exfatprogs    #exFAT filesystem userspace utilities for the Linux Kernel exfat driver
+exfat-utils   #Utilities for exFAT file system
 f2fs-tools
 jfsutils
 reiserfsprogs
