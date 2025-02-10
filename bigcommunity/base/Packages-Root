@@ -142,3 +142,5 @@ wireless_tools
 pigz                #Parallel implementation of the gzip file compressor
 umc                 #Universal Modeline Calculator (UMC) - Calculadora de Modelines para Xorg
 libxcvt             #library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator
+ufw                 #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
+ufw-extras          #Extra configuration files for UFW
