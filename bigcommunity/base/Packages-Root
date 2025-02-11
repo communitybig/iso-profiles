@@ -91,8 +91,8 @@ nginx
 nginx-mod-http-xslt-filter
 
 #keyring
-community-livecd-key
 community-keyring
+biglinux-keyring
 
 #SSH SERVER
 openssh
