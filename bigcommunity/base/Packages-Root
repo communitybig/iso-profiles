@@ -70,7 +70,7 @@ usbutils
 wireless-regdb
 ###########################################
 plymouth
-plymouth-theme-community-base
+plymouth-theme-community
 grub-theme-community
 bigcommunity-name
 comm-base-config
