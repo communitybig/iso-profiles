@@ -18,7 +18,6 @@ xfsprogs
 dosfstools
 e2fsprogs
 exfatprogs    #exFAT filesystem userspace utilities for the Linux Kernel exfat driver
-exfat-utils   #Utilities for exFAT file system
 f2fs-tools
 jfsutils
 reiserfsprogs
@@ -93,6 +92,7 @@ nginx-mod-http-xslt-filter
 #keyring
 community-keyring
 biglinux-keyring
+chili-keyring
 
 #SSH SERVER
 openssh
