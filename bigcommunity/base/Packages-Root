@@ -69,8 +69,8 @@ texinfo
 usbutils
 wireless-regdb
 ###########################################
-#plymouth
-#plymouth-theme-community
+plymouth
+plymouth-theme-community
 grub-theme-community
 bigcommunity-name
 comm-base-config

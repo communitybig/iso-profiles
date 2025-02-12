@@ -18,7 +18,5 @@ xf86-input-vmmouse
 xf86-input-void
 #grub-theme-live-manjaro
 community-livecd-key
-plymouth
-plymouth-theme-community
 grub-theme-community
 
