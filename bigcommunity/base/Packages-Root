@@ -145,6 +145,6 @@ umc                     #Universal Modeline Calculator (UMC) - Calculadora de Mo
 libxcvt                 #library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator
 ufw                     #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
 ufw-extras              #Extra configuration files for UFW
-biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, swap files and swap partitions - biglinux fork
-biglinux-hibernate-in-swapfile-btrfs
 fzf                     #Command-line fuzzy finder
+#biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, swap files and swap partitions - biglinux fork
+#biglinux-hibernate-in-swapfile-btrfs
