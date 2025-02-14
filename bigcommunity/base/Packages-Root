@@ -146,5 +146,5 @@ libxcvt                 #library providing a standalone version of the X server 
 ufw                     #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
 ufw-extras              #Extra configuration files for UFW
 fzf                     #Command-line fuzzy finder
-#biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, swap files and swap partitions - biglinux fork
-#biglinux-hibernate-in-swapfile-btrfs
+biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, swap files and swap partitions - biglinux fork
+biglinux-hibernate-in-swapfile-btrfs
