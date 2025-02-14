@@ -148,6 +148,7 @@ ufw-extras              #Extra configuration files for UFW
 fzf                     #Command-line fuzzy finder
 biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, swap files and swap partitions - biglinux fork
 biglinux-hibernate-in-swapfile-btrfs
+timeshift
 grub-btrfs-timeshift
 grub-btrfs
 
