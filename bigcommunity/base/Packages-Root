@@ -100,7 +100,6 @@ chili-keyring
 #grub-theme-community
 bigcommunity-name
 comm-base-config
-comm-docker-config      # Leonardo
 
 # APPS chili
 chili-nano-config
@@ -137,7 +136,6 @@ ncdu                    #Disk usage analyzer with an ncurses interface
 yay
 pyenv
 #
-docker
 cups
 #
 sysstat                 # Leonardo
@@ -160,3 +158,6 @@ timeshift
 grub-btrfs-timeshift
 grub-btrfs
 
+# instalado via chili-install
+#docker
+#comm-docker-config      # Leonardo
