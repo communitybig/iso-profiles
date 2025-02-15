@@ -159,5 +159,5 @@ grub-btrfs-timeshift
 grub-btrfs
 
 # instalado via chili-install
-#docker
+docker
 #comm-docker-config      # Leonardo
