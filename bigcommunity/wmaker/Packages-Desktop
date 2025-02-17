@@ -325,7 +325,7 @@ lib32-opus
 lib32-pipewire
 lib32-pipewire-jack
 lib32-sdl12-compat
-lib32-sdl2
+lib32-sdl2-compat
 lib32-v4l-utils
 lib32-libjpeg6-turbo
 sdl12-compat
