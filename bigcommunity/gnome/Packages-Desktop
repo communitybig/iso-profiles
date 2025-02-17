@@ -37,7 +37,7 @@ amberol
 baobab
 blueberry
 dconf-editor
-evince
+# evince
 file-roller
 fragments
 gnome-bluetooth-3.0
@@ -73,6 +73,7 @@ nautilus-admin
 nautilus-empty-file
 nautilus-image-converter
 nautilus-share
+papers
 python-nautilus
 rygel
 showtime

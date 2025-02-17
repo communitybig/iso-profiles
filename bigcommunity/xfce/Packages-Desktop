@@ -2,7 +2,7 @@
 #atril
 blueberry
 catfish
-evince
+# evince
 exo
 ffmpegthumbnailer
 garcon
@@ -23,6 +23,7 @@ network-manager-applet
 nm-connection-editor
 ocs-url
 #parole
+papers
 pavucontrol
 playerctl
 pix
