@@ -37,7 +37,7 @@ amberol
 baobab
 blueberry
 dconf-editor
-evince
+# evince
 file-roller
 fragments
 gnome-bluetooth-3.0
@@ -73,6 +73,7 @@ nautilus-admin
 nautilus-empty-file
 nautilus-image-converter
 nautilus-share
+papers
 python-nautilus
 rygel
 showtime
@@ -130,7 +131,7 @@ lib32-nss-mdns
 lib32-openal
 lib32-pipewire-jack
 lib32-sdl12-compat
-lib32-sdl2
+lib32-sdl2-compat
 lib32-v4l-utils
 
 # Network Tools

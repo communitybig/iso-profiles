@@ -2,7 +2,7 @@
 #atril
 blueberry
 catfish
-evince
+# evince
 exo
 ffmpegthumbnailer
 garcon
@@ -23,6 +23,7 @@ network-manager-applet
 nm-connection-editor
 ocs-url
 #parole
+papers
 pavucontrol
 playerctl
 pix
@@ -337,5 +338,5 @@ lib32-nss-mdns
 lib32-openal
 lib32-pipewire-jack
 lib32-sdl12-compat
-lib32-sdl2
+lib32-sdl2-compat
 lib32-v4l-utils
