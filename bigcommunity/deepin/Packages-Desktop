@@ -30,7 +30,7 @@ deepin-image-viewer
 deepin-launchpad
 deepin-menu
 deepin-movie
-deepin-music
+#deepin-music
 deepin-network-core
 deepin-picker
 deepin-polkit-agent
