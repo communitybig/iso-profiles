@@ -198,3 +198,5 @@ spice-vdagent
 ## Others
 fastfetch
 
+# para testes
+glibc-locales
