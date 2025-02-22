@@ -27,8 +27,8 @@ mdadm
 diffutils
 grub
 install-grub
-update-grub
-os-prober
+#update-grub
+#os-prober
 amd-ucode
 intel-ucode
 #less
@@ -51,12 +51,12 @@ comm-base-config
 chili-nano-config
 chili-install
 #chili-utils
-chili-clonedisk
+#chili-clonedisk
 
 # UTILS
 rsync
 nano
-vim
+#vim
 wget
 curl
 dialog

@@ -1,10 +1,9 @@
 #git
 KERNEL-broadcom-wl
 KERNEL-r8168
-maia-console
-#manjaro-architect-launcher
-mkinitcpio-nfs-utils
-nbd
+#maia-console
+#mkinitcpio-nfs-utils
+#nbd
 #open-vm-tools
 manjaro-live-systemd
 networkmanager
