@@ -1,6 +1,5 @@
 # Base
 base
-base-devel
 glibc-locales
 KERNEL
 
@@ -14,7 +13,7 @@ manjaro-release
 manjaro-system
 acpi
 acpid
-b43-fwcutter
+#b43-fwcutter
 #
 btrfs-progs
 xfsprogs
@@ -50,8 +49,6 @@ memtest86+-efi
 #
 less
 logrotate
-man-db
-man-pages
 mkinitcpio-openswap
 networkmanager
 wpa_supplicant
@@ -69,25 +66,13 @@ texinfo
 
 #bash
 bash-completion
-grc-rs
-blesh-git
-
-#FIRMWARE
-#rtl8821ce-dkms-git
-#rtl8821au-dkms-git
-#rtl8814au-dkms-git
-#broadcom-bt-firmware-git
-#upd72020x-fw
 
 #SSH SERVER
 openssh
-sshfs
 tmate
 
 #HTTP SERVER
 dnsmasq
-nginx
-nginx-mod-http-xslt-filter
 
 #keyring
 community-keyring
@@ -115,12 +100,9 @@ gitrepo
 tree
 duf
 shfmt
-inxi
 #
 htop
-btop
 #
-lynx
 wget
 curl
 #
@@ -129,26 +111,37 @@ pacman-contrib
 gettext
 #
 fastfetch
-ncdu                    #Disk usage analyzer with an ncurses interface
 yay
 pyenv
 #
-cups
 #
-sysstat                 # Leonardo
-fakeroot                # Leonardo
 pkgfile                 #command-not-found
-lsof
 pigz                    #Parallel implementation of the gzip file compressor
-#umc                    #Universal Modeline Calculator (UMC) - Calculadora de Modelines para Xorg
-#libxcvt                #library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator
 ufw                     #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
 ufw-extras              #Extra configuration files for UFW
 fzf                     #Command-line fuzzy finder
+#grc-rs
+#blesh-git
+#inxi
+#man-db
+#man-pages
+#sshfs
+#btop
+#lynx
+#ncdu                   #Disk usage analyzer with an ncurses interface
+#cups
+#lsof
+#fakeroot               # Leonardo
+#base-devel
+#sysstat                # Leonardo
+#umc                    #Universal Modeline Calculator (UMC) - Calculadora de Modelines para Xorg
+#libxcvt                #library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator
+#nginx
+#nginx-mod-http-xslt-filter
 
 #swap
 biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, swap files and swap partitions - biglinux fork
-biglinux-hibernate-in-swapfile-btrfs
+#biglinux-hibernate-in-swapfile-btrfs
 
 #snapshots
 #timeshift
@@ -158,3 +151,11 @@ grub-btrfs
 # instalado via chili-install
 docker
 #comm-docker-config      # Leonardo
+
+#FIRMWARE
+#rtl8821ce-dkms-git
+#rtl8821au-dkms-git
+#rtl8814au-dkms-git
+#broadcom-bt-firmware-git
+#upd72020x-fw
+
