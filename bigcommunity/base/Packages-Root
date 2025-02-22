@@ -1,25 +1,18 @@
 # Base
 base
 glibc-locales
-KERNEL
+KERNEL  # Substitua pelo kernel específico (ex: linux, linux-lts, etc.)
 
 # Manjaro
-#manjaro-architect-launcher
-#manjaro-zsh-config
-#cpupower
-#mhwd
-#mhwd-db
 manjaro-release
 manjaro-system
 acpi
 acpid
-#b43-fwcutter
-#
 btrfs-progs
 xfsprogs
 dosfstools
 e2fsprogs
-exfatprogs    #exFAT filesystem userspace utilities for the Linux Kernel exfat driver
+exfatprogs    # exFAT filesystem utilities
 f2fs-tools
 jfsutils
 reiserfsprogs
@@ -33,9 +26,7 @@ lvm2
 device-mapper
 dmraid
 mdadm
-#
 diffutils
-#
 cronie
 efibootmgr
 grub
@@ -46,7 +37,6 @@ amd-ucode
 intel-ucode
 memtest86+
 memtest86+-efi
-#
 less
 logrotate
 mkinitcpio-openswap
@@ -57,24 +47,23 @@ inetutils
 net-tools
 usbutils
 wireless-regdb
-#
 perl
 s-nail
 sof-firmware
 sudo
 texinfo
 
-#bash
+# Bash
 bash-completion
 
-#SSH SERVER
+# SSH Server
 openssh
 tmate
 
-#HTTP SERVER
+# HTTP Server
 dnsmasq
 
-#keyring
+# Keyrings
 community-keyring
 biglinux-keyring
 chili-keyring
@@ -94,32 +83,54 @@ chili-clonedisk
 rsync
 nano
 vim
-biglinux-vim-config   # Leonardo
+biglinux-vim-config   # Configurações personalizadas do Vim
 which
 gitrepo
 tree
 duf
 shfmt
-#
 htop
-#
 wget
 curl
-#
 dialog
 pacman-contrib
 gettext
-#
 fastfetch
 yay
 pyenv
-#
-#
-pkgfile                 #command-not-found
-pigz                    #Parallel implementation of the gzip file compressor
-ufw                     #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
-ufw-extras              #Extra configuration files for UFW
-fzf                     #Command-line fuzzy finder
+pkgfile                 # command-not-found
+pigz                    # Parallel gzip
+ufw                     # Firewall
+ufw-extras              # Configurações extras para UFW
+fzf                     # Fuzzy finder
+
+# Swap
+biglinux-systemd-swap   # Script para gerenciar swap (zram, swap files, etc.)
+#biglinux-hibernate-in-swapfile-btrfs
+
+# Snapshots
+#timeshift
+#grub-btrfs-timeshift
+grub-btrfs
+
+# Docker
+docker
+#comm-docker-config      # Custom Docker Settings
+
+# FIRMWARE
+#rtl8821ce-dkms-git
+#rtl8821au-dkms-git
+#rtl8814au-dkms-git
+#broadcom-bt-firmware-git
+#upd72020x-fw
+
+# Pacotes opcionais
+#manjaro-architect-launcher
+#manjaro-zsh-config
+#cpupower
+#mhwd
+#mhwd-db
+#b43-fwcutter
 #grc-rs
 #blesh-git
 #inxi
@@ -128,34 +139,13 @@ fzf                     #Command-line fuzzy finder
 #sshfs
 #btop
 #lynx
-#ncdu                   #Disk usage analyzer with an ncurses interface
+#ncdu                   # Disk usage analyzer with an ncurses interface
 #cups
 #lsof
-#fakeroot               # Leonardo
-#base-devel
-#sysstat                # Leonardo
-#umc                    #Universal Modeline Calculator (UMC) - Calculadora de Modelines para Xorg
-#libxcvt                #library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator
+#fakeroot               # To compile packages  
+#base-devel             # Development tools  
+#sysstat                # System monitoring  
+#umc                    # Universal Modeline Calculator  
+#libxcvt                # Modeline generator for Xorg  
 #nginx
 #nginx-mod-http-xslt-filter
-
-#swap
-biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, swap files and swap partitions - biglinux fork
-#biglinux-hibernate-in-swapfile-btrfs
-
-#snapshots
-#timeshift
-#grub-btrfs-timeshift
-grub-btrfs
-
-# instalado via chili-install
-docker
-#comm-docker-config      # Leonardo
-
-#FIRMWARE
-#rtl8821ce-dkms-git
-#rtl8821au-dkms-git
-#rtl8814au-dkms-git
-#broadcom-bt-firmware-git
-#upd72020x-fw
-
