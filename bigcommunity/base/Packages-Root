@@ -95,9 +95,6 @@ biglinux-keyring
 chili-keyring
 
 # APPS community
-#plymouth
-#plymouth-theme-community
-#grub-theme-community
 bigcommunity-name
 comm-base-config
 
@@ -143,8 +140,8 @@ fakeroot                # Leonardo
 pkgfile                 #command-not-found
 lsof
 pigz                    #Parallel implementation of the gzip file compressor
-umc                     #Universal Modeline Calculator (UMC) - Calculadora de Modelines para Xorg
-libxcvt                 #library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator
+#umc                    #Universal Modeline Calculator (UMC) - Calculadora de Modelines para Xorg
+#libxcvt                #library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator
 ufw                     #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
 ufw-extras              #Extra configuration files for UFW
 fzf                     #Command-line fuzzy finder
@@ -154,8 +151,8 @@ biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, 
 biglinux-hibernate-in-swapfile-btrfs
 
 #snapshots
-timeshift
-grub-btrfs-timeshift
+#timeshift
+#grub-btrfs-timeshift
 grub-btrfs
 
 # instalado via chili-install

@@ -9,8 +9,8 @@ open-vm-tools
 manjaro-live-systemd
 networkmanager
 terminus-font
-virtualbox-guest-utils
-xdg-user-dirs
+#virtualbox-guest-utils
+#xdg-user-dirs
 xf86-input-elographics
 xf86-input-evdev
 xf86-input-libinput
@@ -21,6 +21,6 @@ grub-theme-live-manjaro
 #APPS community
 community-livecd-key
 grub-theme-community
-plymouth-theme-community
-plymouth
+#plymouth-theme-community
+#plymouth
 
