@@ -41,7 +41,7 @@ grub
 install-grub
 update-grub
 os-prober
-#amd-ucode
+amd-ucode
 #intel-ucode
 #memtest86+
 #memtest86+-efi
