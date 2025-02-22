@@ -36,40 +36,39 @@ mdadm
 #
 diffutils
 #
-cronie
-efibootmgr
+#efibootmgr
 grub
 install-grub
 update-grub
 os-prober
-amd-ucode
-intel-ucode
-memtest86+
-memtest86+-efi
+#amd-ucode
+#intel-ucode
+#memtest86+
+#memtest86+-efi
 #
 less
 logrotate
 mkinitcpio-openswap
 networkmanager
-wpa_supplicant
+#wpa_supplicant
 wireless_tools
-inetutils
-net-tools
-usbutils
-wireless-regdb
+#inetutils
+#net-tools
+#usbutils
+#wireless-regdb
 #
-perl
-s-nail
-sof-firmware
+#perl
+#s-nail
+#sof-firmware
 sudo
-texinfo
+#texinfo
 
 #bash
 bash-completion
 
 #SSH SERVER
-openssh
-tmate
+#openssh
+#tmate
 
 #HTTP SERVER
 dnsmasq
@@ -86,7 +85,7 @@ comm-base-config
 # APPS chili
 chili-nano-config
 chili-install
-chili-void-install
+#chili-void-install
 chili-utils
 chili-clonedisk
 
@@ -94,32 +93,33 @@ chili-clonedisk
 rsync
 nano
 vim
-biglinux-vim-config   # Leonardo
-which
-gitrepo
-tree
-duf
-shfmt
+#biglinux-vim-config   # Leonardo
+#which
+#gitrepo
+#tree
+#duf
+#shfmt
 #
-htop
+#htop
 #
 wget
 curl
 #
 dialog
-pacman-contrib
-gettext
+#pacman-contrib
+#gettext
 #
-fastfetch
-yay
-pyenv
+#fastfetch
+#yay
+#pyenv
 #
 #
-pkgfile                 #command-not-found
-pigz                    #Parallel implementation of the gzip file compressor
-ufw                     #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
-ufw-extras              #Extra configuration files for UFW
-fzf                     #Command-line fuzzy finder
+#pkgfile                 #command-not-found
+#pigz                    #Parallel implementation of the gzip file compressor
+#ufw                     #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
+#ufw-extras              #Extra configuration files for UFW
+#fzf                     #Command-line fuzzy finder
+#gpm                     #A mouse server for the console and xterm
 #grc-rs
 #blesh-git
 #inxi
@@ -140,7 +140,7 @@ fzf                     #Command-line fuzzy finder
 #nginx-mod-http-xslt-filter
 
 #swap
-biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, swap files and swap partitions - biglinux fork
+#biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, swap files and swap partitions - biglinux fork
 #biglinux-hibernate-in-swapfile-btrfs
 
 #snapshots
@@ -149,7 +149,7 @@ biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, 
 grub-btrfs
 
 # instalado via chili-install
-docker
+#docker
 #comm-docker-config      # Leonardo
 
 #FIRMWARE
