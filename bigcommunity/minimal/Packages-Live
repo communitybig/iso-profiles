@@ -5,10 +5,10 @@ maia-console
 #manjaro-architect-launcher
 mkinitcpio-nfs-utils
 nbd
-open-vm-tools
+#open-vm-tools
 manjaro-live-systemd
 networkmanager
-terminus-font
+#terminus-font
 grub-theme-live-manjaro
 
 #APPS community
