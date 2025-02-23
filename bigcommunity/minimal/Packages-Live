@@ -3,8 +3,8 @@ KERNEL-broadcom-wl    # Driver proprietário para placas Wi-Fi Broadcom
 KERNEL-r8168          # Driver para placas de rede Realtek r8168
 
 #manjaro-console      # Console personalizado do Manjaro (não listado, possivelmente "maia-console")
-#mkinitcpio-nfs-utils # Suporte para inicialização de sistemas via NFS no mkinitcpio
-#nbd                  # Network Block Device, permite montar dispositivos de armazenamento via rede
+mkinitcpio-nfs-utils # Suporte para inicialização de sistemas via NFS no mkinitcpio
+nbd                  # Network Block Device, permite montar dispositivos de armazenamento via rede
 #open-vm-tools        # Ferramentas otimizadas para rodar o Manjaro em máquinas virtuais VMware
 
 manjaro-live-systemd  # Configuração para sistemas live do Manjaro baseados em systemd
