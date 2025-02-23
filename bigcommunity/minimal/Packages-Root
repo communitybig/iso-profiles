@@ -67,3 +67,5 @@ nano        # Editor de texto simples e fácil de usar no terminal
 wget        # Ferramenta para baixar arquivos via HTTP, HTTPS e FTP
 curl        # Cliente para transferências de dados via diferentes protocolos
 dialog      # Ferramenta para criar interfaces baseadas em texto no terminal
+htop
+duf
