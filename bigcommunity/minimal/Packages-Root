@@ -69,3 +69,4 @@ curl        # Cliente para transferências de dados via diferentes protocolos
 dialog      # Ferramenta para criar interfaces baseadas em texto no terminal
 htop
 duf
+shfmt
