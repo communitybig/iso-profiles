@@ -16,15 +16,15 @@ dosfstools       # Ferramentas para criar e verificar sistemas de arquivos FAT
 reiserfsprogs    # Ferramentas para gerenciar sistemas de arquivos ReiserFS
 f2fs-tools       # Ferramentas para gerenciar sistemas de arquivos F2FS (Flash-Friendly FS)
 jfsutils         # Ferramentas para gerenciar sistemas de arquivos JFS
+#sysfsutils       # Ferramentas para interagir com o sistema de arquivos /sys
 #nfs-utils        # Ferramentas para compartilhar arquivos via NFS (Network File System)
 #ntfs-3g          # Suporte para leitura e escrita em sistemas de arquivos NTFS
-sysfsutils       # Ferramentas para interagir com o sistema de arquivos /sys
-ecryptfs-utils   # Ferramentas para encriptação de diretórios com eCryptfs
-cryptsetup       # Ferramentas para gerenciar partições criptografadas com LUKS
-lvm2             # Gerenciador de volumes lógicos (LVM)
-device-mapper    # Ferramenta para criar dispositivos mapeados, usado pelo LVM
-dmraid           # Suporte para RAID via firmware (Fake RAID)
-mdadm            # Gerenciador de RAID por software
+#ecryptfs-utils   # Ferramentas para encriptação de diretórios com eCryptfs
+#cryptsetup       # Ferramentas para gerenciar partições criptografadas com LUKS
+#lvm2             # Gerenciador de volumes lógicos (LVM)
+#device-mapper    # Ferramenta para criar dispositivos mapeados, usado pelo LVM
+#dmraid           # Suporte para RAID via firmware (Fake RAID)
+#mdadm            # Gerenciador de RAID por software
 
 # Bootloader e inicialização
 #diffutils        # Utilitários para comparar arquivos e diretórios (diff, cmp, etc.)
