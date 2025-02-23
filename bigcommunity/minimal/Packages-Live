@@ -9,8 +9,7 @@ KERNEL-r8168          # Driver para placas de rede Realtek r8168
 
 manjaro-live-systemd  # Configuração para sistemas live do Manjaro baseados em systemd
 #networkmanager        # Gerenciador de conexões de rede (Wi-Fi, Ethernet, VPN)
-dhcpd
-
+dhcpcd
 #terminus-font        # Fonte monoespaçada para uso no terminal, ideal para TTYs
 grub-theme-live-manjaro # Tema gráfico para o GRUB em sistemas live do Manjaro
 
