@@ -1,6 +1,7 @@
 # Base
 base
 KERNEL
+#glibc-locales
 
 # Manjaro
 #manjaro-release
@@ -34,7 +35,7 @@ intel-ucode
 #less
 #logrotate
 #mkinitcpio-openswap
-networkmanager
+#networkmanager
 #wireless_tools
 sudo
 

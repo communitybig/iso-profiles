@@ -6,7 +6,8 @@ KERNEL-r8168
 #nbd
 #open-vm-tools
 manjaro-live-systemd
-networkmanager
+#networkmanager
+dhcpcd
 #terminus-font
 grub-theme-live-manjaro
 
