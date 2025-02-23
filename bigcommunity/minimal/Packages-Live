@@ -3,7 +3,7 @@ KERNEL-broadcom-wl
 KERNEL-r8168
 #maia-console
 mkinitcpio-nfs-utils
-#nbd
+nbd
 #open-vm-tools
 manjaro-live-systemd
 #networkmanager
