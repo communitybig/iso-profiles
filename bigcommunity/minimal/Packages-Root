@@ -57,8 +57,8 @@ comm-base-config   # Configuração base da comunidade
 # Aplicativos do Chili
 chili-nano-config  # Configuração personalizada para o editor de texto nano
 chili-install      # Ferramenta de instalação do Chili
-#chili-utils       # Conjunto de utilitários do Chili
-#chili-clonedisk   # Ferramenta para clonagem de discos
+chili-utils        # Conjunto de utilitários do Chili
+chili-clonedisk    # Ferramenta para clonagem de discos
 
 # Utilitários essenciais
 rsync       # Sincronização e cópia eficiente de arquivos via rede ou localmente
