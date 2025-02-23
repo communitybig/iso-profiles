@@ -4,9 +4,9 @@ KERNEL-r8168
 #maia-console
 #mkinitcpio-nfs-utils
 #nbd
-open-vm-tools
+#open-vm-tools
 manjaro-live-systemd
-#networkmanager
+networkmanager
 dhcpcd
 #terminus-font
 grub-theme-live-manjaro
