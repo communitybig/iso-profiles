@@ -39,7 +39,7 @@ intel-ucode      # Microcódigo para processadores Intel, melhora estabilidade e
 #less            # Visualizador de arquivos de texto no terminal (permite rolagem)
 #logrotate       # Garante rotação e limpeza automática de logs do sistema
 #mkinitcpio-openswap  # Suporte a criptografia para swap em sistemas com hibernação
-#networkmanager   # Gerenciador de conexões de rede, essencial para redes Wi-Fi e cabeadas
+networkmanager   # Gerenciador de conexões de rede, essencial para redes Wi-Fi e cabeadas
 dhcpcd
 #wireless_tools  # Ferramentas antigas para configuração de redes sem fio (substituído pelo `iw`)
 sudo             # Permite que usuários executem comandos administrativos
