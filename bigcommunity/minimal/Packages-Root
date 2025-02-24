@@ -34,6 +34,7 @@ install-grub     # Ferramenta para instalar o GRUB
 #os-prober        # Detecta outros sistemas operacionais para adicionar ao GRUB
 amd-ucode        # Microcódigo para processadores AMD, melhora estabilidade e segurança
 intel-ucode      # Microcódigo para processadores Intel, melhora estabilidade e segurança
+grub-theme-community
 
 # Ferramentas do sistema
 #less            # Visualizador de arquivos de texto no terminal (permite rolagem)
@@ -67,6 +68,7 @@ nano        # Editor de texto simples e fácil de usar no terminal
 wget        # Ferramenta para baixar arquivos via HTTP, HTTPS e FTP
 curl        # Cliente para transferências de dados via diferentes protocolos
 dialog      # Ferramenta para criar interfaces baseadas em texto no terminal
-htop
-duf
-shfmt
+htop        $ Interactive process viewer
+duf         # Disk Usage/Free Utility
+shfmt       # Format shell programs
+grc-rs      # Generic Colouriser (grc) ported to Rust
