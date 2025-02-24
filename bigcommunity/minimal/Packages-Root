@@ -46,6 +46,9 @@ dhcpcd
 sudo             # Permite que usuários executem comandos administrativos
 bash-completion  # Programmable completion for the bash shell
 
+#SSH SERVER
+openssh          # SSH protocol implementation for remote login, command execution and file transfer
+
 # Keyrings (chaves de repositório)
 community-keyring  # Chaves de assinatura para pacotes da Community
 biglinux-keyring   # Chaves de assinatura para pacotes do BigLinux
