@@ -121,7 +121,7 @@ ufw                     #Uncomplicated and easy to use CLI tool for managing a n
 ufw-extras              #Extra configuration files for UFW
 fzf                     #Command-line fuzzy finder
 gpm                     #A mouse server for the console and xterm
-#grc-rs
+grc-rs
 #blesh-git
 #inxi
 #man-db
