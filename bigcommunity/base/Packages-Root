@@ -7,13 +7,13 @@ KERNEL
 #manjaro-architect-launcher
 #manjaro-zsh-config
 #cpupower
-#mhwd
-#mhwd-db
+mhwd
+mhwd-db
 manjaro-release
 manjaro-system
 acpi
 acpid
-#b43-fwcutter
+b43-fwcutter
 #
 btrfs-progs
 xfsprogs
@@ -122,14 +122,14 @@ fzf                     #Command-line fuzzy finder
 gpm                     #A mouse server for the console and xterm
 grc-rs
 #blesh-git
-#inxi
+inxi
 #man-db
 #man-pages
-#sshfs
-#btop
+sshfs
+btop
 #lynx
-#ncdu                   #Disk usage analyzer with an ncurses interface
-#cups
+ncdu                   #Disk usage analyzer with an ncurses interface
+cups
 #lsof
 #fakeroot               # Leonardo
 #base-devel
@@ -144,13 +144,13 @@ biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, 
 #biglinux-hibernate-in-swapfile-btrfs
 
 #snapshots
-#timeshift
-#grub-btrfs-timeshift
+timeshift
+grub-btrfs-timeshift
 grub-btrfs
 
 # instalado via chili-install
 docker
-#comm-docker-config      # Leonardo
+#comm-docker-config     # Leonardo
 
 #FIRMWARE
 #rtl8821ce-dkms-git
@@ -159,4 +159,5 @@ docker
 #broadcom-bt-firmware-git
 #upd72020x-fw
 
-webkit2gtk
+webkit2gtk              # Necessário para instalar o meta pacote comm-hyprland
+
