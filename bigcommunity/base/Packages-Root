@@ -66,10 +66,12 @@ texinfo
 
 #bash
 bash-completion
+fzf                     #Command-line fuzzy finder
 
 #SSH SERVER
 openssh
 tmate
+sshfs
 
 #HTTP SERVER
 dnsmasq
@@ -88,6 +90,7 @@ chili-nano-config
 chili-install
 chili-utils
 chili-clonedisk
+gitrepo
 
 # UTILS
 rsync
@@ -95,7 +98,6 @@ nano
 vim
 biglinux-vim-config   # Leonardo
 which
-gitrepo
 tree
 duf
 shfmt
@@ -106,6 +108,7 @@ wget
 curl
 #
 dialog
+libnewt
 pacman-contrib
 gettext
 #
@@ -118,24 +121,20 @@ pkgfile                 #command-not-found
 pigz                    #Parallel implementation of the gzip file compressor
 ufw                     #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
 ufw-extras              #Extra configuration files for UFW
-fzf                     #Command-line fuzzy finder
 gpm                     #A mouse server for the console and xterm
 grc-rs
 #blesh-git
 inxi
 #man-db
 #man-pages
-sshfs
 btop
 #lynx
 ncdu                   #Disk usage analyzer with an ncurses interface
-cups
 #lsof
 #fakeroot               # Leonardo
 #base-devel
 #sysstat                # Leonardo
-#umc                    #Universal Modeline Calculator (UMC) - Calculadora de Modelines para Xorg
-#libxcvt                #library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator
+#cups
 #nginx
 #nginx-mod-http-xslt-filter
 
@@ -144,9 +143,9 @@ biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, 
 #biglinux-hibernate-in-swapfile-btrfs
 
 #snapshots
-timeshift
-grub-btrfs-timeshift
-grub-btrfs
+#timeshift
+#grub-btrfs-timeshift
+#grub-btrfs
 
 # instalado via chili-install
 docker
@@ -159,5 +158,10 @@ docker
 #broadcom-bt-firmware-git
 #upd72020x-fw
 
-webkit2gtk              # Necessário para instalar o meta pacote comm-hyprland
+# Necessário para instalar o meta pacote comm-hyprland
+webkit2gtk             
+
+#necessário para chili-xrandr
+umc                     # Universal Modeline Calculator (UMC) - Calculadora de Modelines para Xorg
+libxcvt                 # library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator
 
