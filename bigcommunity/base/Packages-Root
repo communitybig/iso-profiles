@@ -8,8 +8,8 @@ KERNEL
 #manjaro-zsh-config
 #cpupower
 linux-firmware
-mhwd
-mhwd-db
+#mhwd
+#mhwd-db
 manjaro-release
 manjaro-system
 acpi
