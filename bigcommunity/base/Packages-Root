@@ -104,12 +104,13 @@ duf
 shfmt
 #
 htop
+#btop
 #
 wget
 curl
 #
 dialog
-libnewt
+#libnewt
 pacman-contrib
 gettext
 #
@@ -120,17 +121,14 @@ pyenv
 #
 pkgfile                 #command-not-found
 pigz                    #Parallel implementation of the gzip file compressor
-ufw                     #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
-ufw-extras              #Extra configuration files for UFW
 gpm                     #A mouse server for the console and xterm
 grc-rs
+ncdu                   #Disk usage analyzer with an ncurses interface
 #blesh-git
-inxi
+#inxi
 #man-db
 #man-pages
-btop
 #lynx
-ncdu                   #Disk usage analyzer with an ncurses interface
 #lsof
 #fakeroot               # Leonardo
 #base-devel
@@ -138,6 +136,10 @@ ncdu                   #Disk usage analyzer with an ncurses interface
 #cups
 #nginx
 #nginx-mod-http-xslt-filter
+
+# firewall
+#ufw                    #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
+#ufw-extras             #Extra configuration files for UFW
 
 #swap
 biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, swap files and swap partitions - biglinux fork
@@ -148,8 +150,8 @@ biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, 
 #grub-btrfs-timeshift
 #grub-btrfs
 
+#docker
 # instalado via chili-install
-docker
 #comm-docker-config     # Leonardo
 
 #FIRMWARE
