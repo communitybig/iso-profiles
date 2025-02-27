@@ -1,5 +1,6 @@
 # Base
 base
+#base-devel
 glibc-locales
 KERNEL
 
@@ -8,8 +9,8 @@ KERNEL
 #manjaro-zsh-config
 #cpupower
 linux-firmware
-#mhwd
-#mhwd-db
+mhwd
+mhwd-db
 manjaro-release
 manjaro-system
 acpi
@@ -74,9 +75,6 @@ openssh
 tmate
 sshfs
 
-#HTTP SERVER
-dnsmasq
-
 #keyring
 community-keyring
 biglinux-keyring
@@ -104,13 +102,13 @@ duf
 shfmt
 #
 htop
-#btop
+btop
 #
 wget
 curl
 #
 dialog
-#libnewt
+libnewt
 pacman-contrib
 gettext
 #
@@ -118,28 +116,29 @@ fastfetch
 yay
 pyenv
 #
-#
 pkgfile                 #command-not-found
 pigz                    #Parallel implementation of the gzip file compressor
 gpm                     #A mouse server for the console and xterm
 grc-rs
-ncdu                   #Disk usage analyzer with an ncurses interface
+ncdu                    #Disk usage analyzer with an ncurses interface
+inxi
+lsof
+fakeroot
 #blesh-git
-#inxi
 #man-db
 #man-pages
 #lynx
-#lsof
-#fakeroot               # Leonardo
-#base-devel
 #sysstat                # Leonardo
-#cups
-#nginx
-#nginx-mod-http-xslt-filter
+cups
+
+#HTTP SERVER
+dnsmasq
+nginx
+nginx-mod-http-xslt-filter
 
 # firewall
-#ufw                    #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
-#ufw-extras             #Extra configuration files for UFW
+ufw                    #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
+ufw-extras             #Extra configuration files for UFW
 
 #swap
 biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, swap files and swap partitions - biglinux fork
@@ -150,7 +149,7 @@ biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, 
 #grub-btrfs-timeshift
 #grub-btrfs
 
-#docker
+docker
 # instalado via chili-install
 #comm-docker-config     # Leonardo
 
@@ -159,12 +158,12 @@ biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, 
 #rtl8821au-dkms-git
 #rtl8814au-dkms-git
 #broadcom-bt-firmware-git
-#upd72020x-fw
+upd72020x-fw
 
 # Necessário para instalar o meta pacote comm-hyprland
 webkit2gtk             
 
 #necessário para chili-xrandr
-#umc                    # Universal Modeline Calculator (UMC) - Calculadora de Modelines para Xorg
-#libxcvt                # library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator
+umc                    # Universal Modeline Calculator (UMC) - Calculadora de Modelines para Xorg
+libxcvt                # library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator
 noto-fonts-emoji        # para uso no .bashrc mostra emoji
