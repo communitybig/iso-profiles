@@ -1,7 +1,9 @@
 chili-install
 community-livecd-key
+gpm
 grub-theme-live-manjaro
 grub-theme-live-common
+jfsutils
 linux612-broadcom-wl
 linux612-r8168
 manjaro-live-systemd

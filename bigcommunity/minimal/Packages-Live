@@ -15,3 +15,5 @@ grub-theme-live-manjaro # Tema gráfico para o GRUB em sistemas live do Manjaro
 
 #APPS community
 community-livecd-key  # Chave de assinatura usada para pacotes da versão LiveCD do Manjaro
+
+chili-install      # Ferramenta de instalação do Chili

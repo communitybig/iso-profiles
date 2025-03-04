@@ -13,7 +13,7 @@ xfsprogs         # Ferramentas para gerenciar sistemas de arquivos XFS
 e2fsprogs        # Ferramentas para gerenciar sistemas de arquivos ext2, ext3 e ext4
 exfatprogs       # Utilitários para gerenciar sistemas de arquivos exFAT
 dosfstools       # Ferramentas para criar e verificar sistemas de arquivos FAT
-reiserfsprogs    # Ferramentas para gerenciar sistemas de arquivos ReiserFS
+#reiserfsprogs    # Ferramentas para gerenciar sistemas de arquivos ReiserFS
 f2fs-tools       # Ferramentas para gerenciar sistemas de arquivos F2FS (Flash-Friendly FS)
 jfsutils         # Ferramentas para gerenciar sistemas de arquivos JFS
 #sysfsutils       # Ferramentas para interagir com o sistema de arquivos /sys
@@ -40,7 +40,7 @@ grub-theme-community
 #less            # Visualizador de arquivos de texto no terminal (permite rolagem)
 #logrotate       # Garante rotação e limpeza automática de logs do sistema
 #mkinitcpio-openswap  # Suporte a criptografia para swap em sistemas com hibernação
-networkmanager   # Gerenciador de conexões de rede, essencial para redes Wi-Fi e cabeadas
+#networkmanager   # Gerenciador de conexões de rede, essencial para redes Wi-Fi e cabeadas
 dhcpcd
 #wireless_tools  # Ferramentas antigas para configuração de redes sem fio (substituído pelo `iw`)
 sudo             # Permite que usuários executem comandos administrativos
@@ -60,7 +60,6 @@ comm-minimal-config   # Configuração minimal da comunidade
 
 # Aplicativos do Chili
 chili-nano-config  # Configuração personalizada para o editor de texto nano
-chili-install      # Ferramenta de instalação do Chili
 chili-utils        # Conjunto de utilitários do Chili
 chili-clonedisk    # Ferramenta para clonagem de discos
 
