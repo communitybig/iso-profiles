@@ -55,8 +55,8 @@ biglinux-keyring   # Chaves de assinatura para pacotes do BigLinux
 chili-keyring      # Chaves de assinatura para pacotes do Chili
 
 # Aplicativos da comunidade
-bigcommunity-name  # Identificação da comunidade BigLinux
-comm-minimal-config   # Configuração minimal da comunidade
+bigcommunity-name    # Identificação da comunidade BigLinux
+comm-minimal-config  # Configuração minimal da comunidade
 
 # Aplicativos do Chili
 chili-nano-config  # Configuração personalizada para o editor de texto nano
@@ -74,3 +74,5 @@ htop        # Interactive process viewer
 duf         # Disk Usage/Free Utility
 shfmt       # Format shell programs
 grc-rs      # Generic Colouriser (grc) ported to Rust
+mkinitcpio           # Modular initramfs image creation utility
+faster-mkinitcpio    # Change to mkinitcpio run faster
