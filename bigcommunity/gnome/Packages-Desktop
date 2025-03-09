@@ -33,13 +33,14 @@ ttf-roboto-slab
 
 # GNOME Applications
 adw-gtk-theme
-amberol
+#amberol
 baobab
 blueberry
 dconf-editor
 # evince
 file-roller
 fragments
+gapless # Play your music elegantly (AKA: G4Music)
 gnome-bluetooth-3.0
 gnome-browser-connector
 gnome-calculator
@@ -74,6 +75,7 @@ nautilus-empty-file
 nautilus-image-converter
 nautilus-share
 papers
+power-profiles-daemon
 python-nautilus
 rygel
 showtime
@@ -198,7 +200,6 @@ debtap-mod
 hplip
 ipp-usb
 iso2usb
-manjaro-application-utility
 manjaro-printer
 pamac-updates-menu
 pamac-flatpak-plugin
