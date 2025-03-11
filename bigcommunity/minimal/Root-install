@@ -1,3 +1,4 @@
 biglinux-systemd-swap
-mkinitcpio
 fast-mkinitcpio
+plymouth
+mkinitcpio
