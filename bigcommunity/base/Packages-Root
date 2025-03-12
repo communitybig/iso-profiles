@@ -51,7 +51,6 @@ memtest86+-efi
 #
 less
 logrotate
-mkinitcpio-openswap
 networkmanager
 wpa_supplicant
 wireless_tools
@@ -68,6 +67,7 @@ texinfo
 
 #bash
 bash-completion
+grc-rs
 fzf                     #Command-line fuzzy finder
 
 #SSH SERVER
@@ -95,7 +95,7 @@ gitrepo
 rsync
 nano
 vim
-biglinux-vim-config   # Leonardo
+#biglinux-vim-config   # Leonardo
 which
 tree
 duf
@@ -114,12 +114,13 @@ gettext
 #
 fastfetch
 yay
+paru
+bat
 pyenv
 #
 pkgfile                 #command-not-found
 pigz                    #Parallel implementation of the gzip file compressor
 gpm                     #A mouse server for the console and xterm
-grc-rs
 ncdu                    #Disk usage analyzer with an ncurses interface
 inxi
 lsof
@@ -129,7 +130,7 @@ fakeroot
 #man-pages
 #lynx
 #sysstat                # Leonardo
-cups
+#cups
 
 #HTTP SERVER
 dnsmasq
@@ -149,7 +150,7 @@ biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, 
 #grub-btrfs-timeshift
 #grub-btrfs
 
-docker
+#docker
 # instalado via chili-install
 #comm-docker-config     # Leonardo
 
@@ -158,16 +159,19 @@ docker
 #rtl8821au-dkms-git
 #rtl8814au-dkms-git
 #broadcom-bt-firmware-git
-upd72020x-fw
+upd72020x-fw            # Renesas uPD720201 / uPD720202 USB 3.0 chipsets firmware
 
 # Necessário para instalar o meta pacote comm-hyprland
-webkit2gtk             
+webkit2gtk              # Web content engine for GTK
+webkit2gtk-4.1          # Web content engine for GTK
 
 #necessário para chili-xrandr
 umc                     # Universal Modeline Calculator (UMC) - Calculadora de Modelines para Xorg
 libxcvt                 # library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator
 noto-fonts-emoji        # para uso no .bashrc mostra emoji
 hdparm                  # A shell utility for manipulating Linux IDE drive/driver parameters
+mkinitcpio-openswap     # Mkinitcpio openswap hook
 mkinitcpio              # Modular initramfs image creation utility
 faster-mkinitcpio       # Change to mkinitcpio run faster
 usb_modeswitch          # Activating switchable USB devices on Linux
+devtools-git            # Tools for Arch Linux package maintainers
