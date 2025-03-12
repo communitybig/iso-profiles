@@ -1,13 +1,7 @@
-# Base
 base
 #base-devel
 glibc-locales
 KERNEL
-
-# Manjaro
-#manjaro-architect-launcher
-#manjaro-zsh-config
-#cpupower
 linux-firmware
 mhwd
 mhwd-db
@@ -52,6 +46,7 @@ memtest86+-efi
 less
 logrotate
 networkmanager
+dhcpcd
 wpa_supplicant
 wireless_tools
 inetutils
@@ -83,6 +78,9 @@ chili-keyring
 # APPS community
 bigcommunity-name
 comm-base-config
+grub-theme-community
+plymouth-theme-community
+plymouth
 
 # APPS chili
 chili-nano-config
