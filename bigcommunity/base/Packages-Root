@@ -170,4 +170,4 @@ noto-fonts-emoji        # para uso no .bashrc mostra emoji
 hdparm                  # A shell utility for manipulating Linux IDE drive/driver parameters
 mkinitcpio              # Modular initramfs image creation utility
 faster-mkinitcpio       # Change to mkinitcpio run faster
-
+usb_modeswitch          # Activating switchable USB devices on Linux
