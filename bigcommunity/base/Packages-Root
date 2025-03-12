@@ -135,11 +135,11 @@ nginx
 nginx-mod-http-xslt-filter
 
 # firewall
-ufw                    #Uncomplicated and easy to use CLI tool for managing a netfilter firewall
-ufw-extras             #Extra configuration files for UFW
+ufw                     # Uncomplicated and easy to use CLI tool for managing a netfilter firewall
+ufw-extras              # Extra configuration files for UFW
 
 #swap
-biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, swap files and swap partitions - biglinux fork
+biglinux-systemd-swap   # Script for creating hybrid swap space from zram swaps, swap files and swap partitions - biglinux fork
 #biglinux-hibernate-in-swapfile-btrfs
 
 #snapshots
@@ -147,9 +147,8 @@ biglinux-systemd-swap   #Script for creating hybrid swap space from zram swaps, 
 #grub-btrfs-timeshift
 #grub-btrfs
 
-#docker
-# instalado via chili-install
-#comm-docker-config     # Leonardo
+#docker                 # Pack, ship and run any application as a lightweight container
+#comm-docker-config     # instalado via chili-install
 
 #FIRMWARE
 #rtl8821ce-dkms-git
@@ -170,5 +169,5 @@ mkinitcpio-openswap     # Mkinitcpio openswap hook
 mkinitcpio              # Modular initramfs image creation utility
 faster-mkinitcpio       # Change to mkinitcpio run faster
 usb_modeswitch          # Activating switchable USB devices on Linux
-#webkit2gtk-4.1          # Web content engine for GTK
+#webkit2gtk-4.1         # Web content engine for GTK
 #paru
