@@ -159,6 +159,7 @@ upd72020x-fw            # Renesas uPD720201 / uPD720202 USB 3.0 chipsets firmwar
 
 # Necessário para instalar o meta pacote comm-hyprland
 webkit2gtk              # Web content engine for GTK
+webkit2gtk-4.1          # Web content engine for GTK
 
 #necessário para chili-xrandr
 umc                     # Universal Modeline Calculator (UMC) - Calculadora de Modelines para Xorg
@@ -169,5 +170,5 @@ mkinitcpio-openswap     # Mkinitcpio openswap hook
 mkinitcpio              # Modular initramfs image creation utility
 faster-mkinitcpio       # Change to mkinitcpio run faster
 usb_modeswitch          # Activating switchable USB devices on Linux
-#webkit2gtk-4.1         # Web content engine for GTK
-#paru
+paru                    # Feature packed AUR helper
+compsize                # Calculate compression ratio of a set of files on Btrfs
