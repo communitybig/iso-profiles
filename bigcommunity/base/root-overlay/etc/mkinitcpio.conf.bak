@@ -4,7 +4,7 @@
 # run.  Advanced users may wish to specify all system modules
 # in this array.  For instance:
 #     MODULES=(usbhid xhci_hcd)
-MODULES=(usbhid xhci_hcd btrfs)
+MODULES=()
 
 # BINARIES
 # This setting includes any additional binaries a given user may
@@ -51,8 +51,7 @@ FILES=""
 #    usr and fsck hooks.
 #HOOKS="base udev autodetect modconf kms plymouth block filesystems"
 #HOOKS=(base udev autodetect modconf kms plymouth keyboard keymap consolefont block mdadm_udev encrypt filesystems fsck)
-#HOOKS=(base udev autodetect modconf kms plymouth keyboard keymap consolefont block mdadm_udev filesystems fsck)
-HOOKS=(base udev autodetect modconf kms plymouth keyboard keymap consolefont block btrfs mdadm_udev filesystems fsck)
+HOOKS=(base udev autodetect modconf kms plymouth keyboard keymap consolefont block mdadm_udev filesystems fsck)
 
 # COMPRESSION
 # Use this to compress the initramfs image. By default, gzip compression

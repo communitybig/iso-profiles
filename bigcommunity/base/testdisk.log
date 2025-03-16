@@ -1,0 +1,806 @@
+
+
+Wed Mar 12 15:27:37 2025
+Command line: TestDisk
+
+TestDisk 7.2, Data Recovery Utility, February 2024
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 6.12.17-1-MANJARO (#1 SMP PREEMPT_DYNAMIC Thu, 27 Feb 2025 13:04:33 +0000) x86_64
+Compiler: GCC 14.2
+ext2fs lib: 1.47.2, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.5
+/dev/sda: LBA, HPA, LBA48, DCO support
+/dev/sda: size       468862128 sectors
+/dev/sda: user_max   468862128 sectors
+/dev/sda: native_max 468862128 sectors
+/dev/sdb: LBA, HPA, LBA48, DCO support
+/dev/sdb: size       250069680 sectors
+/dev/sdb: user_max   250069680 sectors
+/dev/sdb: native_max 250069680 sectors
+/dev/sdc: LBA, HPA, LBA48 support
+/dev/sdc: size       1000215216 sectors
+/dev/sdc: user_max   1000215216 sectors
+/dev/sdc: native_max 1000215216 sectors
+/dev/sdd: LBA, LBA48 support
+/dev/sdd: size       1000215216 sectors
+/dev/sdd: user_max   1000215216 sectors
+/dev/sde: LBA, LBA48 support
+/dev/sde: size       1000215216 sectors
+/dev/sde: user_max   1000215216 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop0 - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 240 GB / 223 GiB - CHS 29185 255 63, sector size=512 - KINGSTON SA400S3, FW:B1D1
+Disk /dev/sdb - 128 GB / 119 GiB - CHS 15566 255 63, sector size=512 - P3-128, FW:.13
+Disk /dev/sdc - 512 GB / 476 GiB - CHS 62260 255 63, sector size=512 - KUNUP, FW:1A0
+Disk /dev/sdd - 512 GB / 476 GiB - CHS 62260 255 63, sector size=512 - P3-512, FW:873
+Disk /dev/sde - 512 GB / 476 GiB - CHS 62260 255 63, sector size=512 - P3-512, FW:873
+Disk /dev/sdf - 5000 GB / 4657 GiB - CHS 4769275 64 32, sector size=512 - Elements 2667, FW:2007
+Disk /dev/nvme0n1 - 2000 GB / 1863 GiB - CHS 1907729 64 32, sector size=512 - Netac NVMe SSD 2TB, S/N:RN202210192TB069802
+Disk /dev/nvme1n1 - 256 GB / 238 GiB - CHS 244198 64 32, sector size=512 - XrayDisk 256GB, S/N:AA000000000000000407
+
+Partition table type (auto): EFI GPT
+Disk /dev/nvme1n1 - 256 GB / 238 GiB - XrayDisk 256GB
+Partition table type: EFI GPT
+
+Analyse Disk /dev/nvme1n1 - 256 GB / 238 GiB - CHS 244198 64 32
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=500118191 (expected 500118191)
+hdr_lba_start=2048
+hdr_lba_end=500118158
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+Current partition structure:
+ 1 P EFI System                  4096     618495     614400
+ 2 P Linux filesys. data       618496  500117503  499499008 [root]
+
+search_part()
+Disk /dev/nvme1n1 - 256 GB / 238 GiB - CHS 244198 64 32
+FAT32 at 2/0/1
+FAT1 : 40-639
+FAT2 : 640-1239
+start_rootdir : 2424 root cluster : 150
+Data : 1240-614399
+sectors : 614400
+cluster_size : 8
+no_of_cluster : 76645 (2 - 76646)
+fat_length 600 calculated 599
+heads/cylinder 255 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 2/0/1
+FAT: cluster=150(0x96), pos=6520
+     EFI System                  4096     618495     614400 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=4096, 314 MB / 300 MiB
+
+recover_btrfs: part_size 499499008
+     Linux filesys. data       618496  500117503  499499008
+     btrfs blocksize=4096 Backup superblock, 255 GB / 238 GiB
+
+Results
+   P EFI System                  4096     618495     614400 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=4096, 314 MB / 300 MiB
+   P Linux filesys. data       618496  500117503  499499008
+     btrfs blocksize=4096 Backup superblock, 255 GB / 238 GiB
+
+Hint for advanced users: dmsetup may be used if you prefer to avoid rewriting the partition table for the moment:
+echo "0 614400 linear /dev/nvme1n1 4096" | dmsetup create test0
+echo "0 499499008 linear /dev/nvme1n1 618496" | dmsetup create test1
+
+interface_write()
+ 1 P EFI System                  4096     618495     614400 [EFI System Partition] [NO NAME]
+ 2 P Linux filesys. data       618496  500117503  499499008
+
+search_part()
+Disk /dev/nvme1n1 - 256 GB / 238 GiB - CHS 244198 64 32
+FAT32 at 2/0/1
+FAT1 : 40-639
+FAT2 : 640-1239
+start_rootdir : 2424 root cluster : 150
+Data : 1240-614399
+sectors : 614400
+cluster_size : 8
+no_of_cluster : 76645 (2 - 76646)
+fat_length 600 calculated 599
+heads/cylinder 255 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 2/0/1
+FAT: cluster=150(0x96), pos=6520
+     EFI System                  4096     618495     614400 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=4096, 314 MB / 300 MiB
+FAT32 at 2/0/7
+FAT1 : 40-639
+FAT2 : 640-1239
+start_rootdir : 2424 root cluster : 150
+Data : 1240-614399
+sectors : 614400
+cluster_size : 8
+no_of_cluster : 76645 (2 - 76646)
+fat_length 600 calculated 599
+FAT differs, FAT sectors=592-600/600
+heads/cylinder 255 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 2/0/7
+FAT: cluster=150(0x96), pos=6520
+     EFI System                  4096     618495     614400 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=4096, 314 MB / 300 MiB
+FAT32 at 2/0/7
+FAT1 : 40-639
+FAT2 : 640-1239
+start_rootdir : 2424 root cluster : 150
+Data : 1240-614399
+sectors : 614400
+cluster_size : 8
+no_of_cluster : 76645 (2 - 76646)
+fat_length 600 calculated 599
+FAT differs, FAT sectors=592-600/600
+heads/cylinder 255 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 2/0/7
+FAT: Directory entry is marked as free.
+FAT: cluster=150(0x96), pos=6526
+     MS Data                     4102     618501     614400 [NO NAME]
+     FAT32, blocksize=4096, 314 MB / 300 MiB
+
+recover_btrfs: part_size 499499008
+     Linux filesys. data       618496  500117503  499499008
+     btrfs blocksize=4096 Backup superblock, 255 GB / 238 GiB
+
+recover_btrfs: part_size 499499008
+     Linux filesys. data       749440  500248447  499499008
+     btrfs blocksize=4096 Backup superblock, 255 GB / 238 GiB
+This partition ends after the disk limits. (start=749440, size=499499008, end=500248447, disk end=500118192)
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data      4903824   71482255   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data      5019624   71598055   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+FAT32 at 3212/35/1
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 255 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 3212/35/1
+     EFI System               6579296    7103581     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 3212/35/7
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 255 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 3212/35/7
+     EFI System               6579302    7103587     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data      8561768   75140199   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data      8821360   75399791   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+FAT32 at 5736/12/9
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 255 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 5736/12/9
+     EFI System              11747720   12272005     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 5736/12/15
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 255 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 5736/12/15
+     EFI System              11747726   12272011     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data     12248448   78826879   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data     16686664   83265095   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+FAT32 at 8408/17/9
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 255 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 8408/17/9
+     EFI System              17220136   17744421     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 8408/17/15
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 255 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 8408/17/15
+     EFI System              17220142   17744427     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 8560/58/25
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 8560/58/25
+     EFI System              17532760   18057045     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 8560/58/31
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 8560/58/31
+     EFI System              17532766   18057051     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data     18782264   85360695   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     Linux Swap              38461184 17521323119 17482861936
+     SWAP2 version 1134376284, pagesize=8192, 8951 GB / 8336 GiB
+This partition ends after the disk limits. (start=38461184, size=17482861936, end=17521323119, disk end=500118192)
+     Linux Swap              38461192   41957111    3495920
+     SWAP2 version 1, pagesize=4096, 1789 MB / 1706 MiB
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data     61785176  128363607   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data     65211616  131790047   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+FAT32 at 38327/21/27
+Bad root_cluster
+FAT12 at 38327/21/28
+FAT1 : 1-9
+FAT2 : 10-18
+start_rootdir : 19
+Data : 33-2879
+sectors : 2880
+cluster_size : 1
+no_of_cluster : 2847 (2 - 2848)
+fat_length 9 calculated 9
+FAT differs, FAT sectors=0-9/9
+heads/cylinder 2 (FAT) != 64 (HD)
+sect/track 18 (FAT) != 32 (HD)
+
+FAT12 at 38327/21/28
+     MS Data                 78494395   78497274       2880 [NO NAME]
+     FAT12, blocksize=512, 1474 KB / 1440 KiB
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data    135962072  202540503   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data    143565848  210144279   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+FAT32 at 74008/5/3
+Bad root_cluster
+FAT12 at 74008/5/4
+FAT1 : 1-9
+FAT2 : 10-18
+start_rootdir : 19
+Data : 33-2879
+sectors : 2880
+cluster_size : 1
+no_of_cluster : 2847 (2 - 2848)
+fat_length 9 calculated 9
+FAT differs, FAT sectors=0-9/9
+heads/cylinder 2 (FAT) != 64 (HD)
+sect/track 18 (FAT) != 32 (HD)
+
+FAT12 at 74008/5/4
+     MS Data                151568547  151571426       2880 [NO NAME]
+     FAT12, blocksize=512, 1474 KB / 1440 KiB
+
+LVM2 magic value at 77335/60/30
+part_size 0
+     Linux LVM              158384029  158384028          0
+     LVM2, 0 B
+Partition not added.
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data    199991512  266569943   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+FAT32 at 115606/62/17
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+
+FAT32 at 115606/62/17
+     EFI System             236763088  237287373     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 115606/62/23
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+
+FAT32 at 115606/62/23
+FAT: Directory entry is marked as free.
+FAT: cluster=2(0x2), pos=236771192
+     MS Data                236763094  237287379     524286 [RlX3RhZyI6I]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 116579/53/1
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 116579/53/1
+     EFI System             238755488  239279773     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 116579/53/7
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 116579/53/7
+     EFI System             238755494  239279779     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 120479/38/25
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+
+FAT32 at 120479/38/25
+     EFI System             246742232  247266517     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 120479/38/31
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 120479/38/31
+     EFI System             246742238  247266523     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data    249265832  315844263   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+FAT32 at 122119/58/17
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 122119/58/17
+     EFI System             250101584  250625869     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 122119/58/23
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 122119/58/23
+     EFI System             250101590  250625875     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 131173/6/1
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 131173/6/1
+     EFI System             268642496  269166781     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 131173/6/7
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 131173/6/7
+     EFI System             268642502  269166787     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+
+LVM magic value at 134360/20/27
+
+LVM magic value at 134436/45/18
+     Linux Swap             317509960 33177179975 32859670016
+     SWAP2 version 1769236846, pagesize=8192, 16 TB / 15 TiB
+This partition ends after the disk limits. (start=317509960, size=32859670016, end=33177179975, disk end=500118192)
+     Linux Swap             317509968  318034239     524272
+     SWAP2 version 1, pagesize=4096, 268 MB / 255 MiB
+FAT32 at 188108/44/17
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+FAT differs, FAT sectors=0-16/4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+
+FAT32 at 188108/44/17
+     EFI System             385246608  385770893     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+FAT32 at 188108/44/23
+FAT1 : 32-4064
+FAT2 : 4065-8097
+start_rootdir : 8098 root cluster : 2
+Data : 8098-524285
+sectors : 524286
+cluster_size : 1
+no_of_cluster : 516188 (2 - 516189)
+fat_length 4033 calculated 4033
+heads/cylinder 16 (FAT) != 64 (HD)
+sect/track 63 (FAT) != 32 (HD)
+set_FAT_info: name from BS used
+
+FAT32 at 188108/44/23
+     EFI System             385246614  385770899     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+
+LVM2 magic value at 192059/42/6
+part_size 0
+     Linux LVM              393338181  393338180          0
+     LVM2, 0 B
+Partition not added.
+     Linux Swap             399506016 7452293695 7052787680
+     SWAP2 version 1421627626, pagesize=8192, 3611 GB / 3363 GiB
+This partition ends after the disk limits. (start=399506016, size=7052787680, end=7452293695, disk end=500118192)
+     Linux Swap             399506024  400030295     524272
+     SWAP2 version 1, pagesize=4096, 268 MB / 255 MiB
+
+recover_btrfs: part_size 66578432
+     Linux filesys. data    412276720  478855151   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+
+LVM magic value at 227688/40/14
+Disk /dev/nvme1n1 - 256 GB / 238 GiB - CHS 244198 64 32
+Check the hard disk size: HD jumper settings, BIOS detection...
+The hard disk (256 GB / 238 GiB) seems too small! (< 16 TB / 15 TiB)
+The following partitions can't be recovered:
+     Linux filesys. data       749440  500248447  499499008
+     btrfs blocksize=4096 Backup superblock, 255 GB / 238 GiB
+     Linux Swap              38461184 17521323119 17482861936
+     SWAP2 version 1134376284, pagesize=8192, 8951 GB / 8336 GiB
+     Linux Swap             317509960 33177179975 32859670016
+     SWAP2 version 1769236846, pagesize=8192, 16 TB / 15 TiB
+     Linux Swap             399506016 7452293695 7052787680
+     SWAP2 version 1421627626, pagesize=8192, 3611 GB / 3363 GiB
+
+Results
+     EFI System                  4096     618495     614400 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=4096, 314 MB / 300 MiB
+     MS Data                     4102     618501     614400 [NO NAME]
+     FAT32, blocksize=4096, 314 MB / 300 MiB
+     Linux filesys. data       618496  500117503  499499008
+     btrfs blocksize=4096 Backup superblock, 255 GB / 238 GiB
+     Linux filesys. data      4903824   71482255   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     Linux filesys. data      5019624   71598055   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     EFI System               6579296    7103581     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     EFI System               6579302    7103587     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     Linux filesys. data      8561768   75140199   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     Linux filesys. data      8821360   75399791   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     EFI System              11747720   12272005     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     EFI System              11747726   12272011     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     Linux filesys. data     12248448   78826879   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     Linux filesys. data     16686664   83265095   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     EFI System              17220136   17744421     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     EFI System              17220142   17744427     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     EFI System              17532760   18057045     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     EFI System              17532766   18057051     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     Linux filesys. data     18782264   85360695   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     Linux Swap              38461192   41957111    3495920
+     SWAP2 version 1, pagesize=4096, 1789 MB / 1706 MiB
+     Linux filesys. data     61785176  128363607   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     Linux filesys. data     65211616  131790047   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     MS Data                 78494395   78497274       2880 [NO NAME]
+     FAT12, blocksize=512, 1474 KB / 1440 KiB
+     Linux filesys. data    135962072  202540503   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     Linux filesys. data    143565848  210144279   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     MS Data                151568547  151571426       2880 [NO NAME]
+     FAT12, blocksize=512, 1474 KB / 1440 KiB
+     Linux filesys. data    199991512  266569943   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     EFI System             236763088  237287373     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     MS Data                236763094  237287379     524286 [RlX3RhZyI6I]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     EFI System             238755488  239279773     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     EFI System             238755494  239279779     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     EFI System             246742232  247266517     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     EFI System             246742238  247266523     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     Linux filesys. data    249265832  315844263   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+     EFI System             250101584  250625869     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     EFI System             250101590  250625875     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     EFI System             268642496  269166781     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     EFI System             268642502  269166787     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     Linux Swap             317509968  318034239     524272
+     SWAP2 version 1, pagesize=4096, 268 MB / 255 MiB
+     EFI System             385246608  385770893     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     EFI System             385246614  385770899     524286 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 268 MB / 255 MiB
+     Linux Swap             399506024  400030295     524272
+     SWAP2 version 1, pagesize=4096, 268 MB / 255 MiB
+     Linux filesys. data    412276720  478855151   66578432 [ROOT]
+     btrfs blocksize=4096 Backup superblock, 34 GB / 31 GiB
+
+Hint for advanced users: dmsetup may be used if you prefer to avoid rewriting the partition table for the moment:
+echo "0 614400 linear /dev/nvme1n1 4096" | dmsetup create test0
+echo "0 614400 linear /dev/nvme1n1 4102" | dmsetup create test1
+echo "0 499499008 linear /dev/nvme1n1 618496" | dmsetup create test2
+echo "0 66578432 linear /dev/nvme1n1 4903824" | dmsetup create test3
+echo "0 66578432 linear /dev/nvme1n1 5019624" | dmsetup create test4
+echo "0 524286 linear /dev/nvme1n1 6579296" | dmsetup create test5
+echo "0 524286 linear /dev/nvme1n1 6579302" | dmsetup create test6
+echo "0 66578432 linear /dev/nvme1n1 8561768" | dmsetup create test7
+echo "0 66578432 linear /dev/nvme1n1 8821360" | dmsetup create test8
+echo "0 524286 linear /dev/nvme1n1 11747720" | dmsetup create test9
+echo "0 524286 linear /dev/nvme1n1 11747726" | dmsetup create test10
+echo "0 66578432 linear /dev/nvme1n1 12248448" | dmsetup create test11
+echo "0 66578432 linear /dev/nvme1n1 16686664" | dmsetup create test12
+echo "0 524286 linear /dev/nvme1n1 17220136" | dmsetup create test13
+echo "0 524286 linear /dev/nvme1n1 17220142" | dmsetup create test14
+echo "0 524286 linear /dev/nvme1n1 17532760" | dmsetup create test15
+echo "0 524286 linear /dev/nvme1n1 17532766" | dmsetup create test16
+echo "0 66578432 linear /dev/nvme1n1 18782264" | dmsetup create test17
+echo "0 3495920 linear /dev/nvme1n1 38461192" | dmsetup create test18
+echo "0 66578432 linear /dev/nvme1n1 61785176" | dmsetup create test19
+echo "0 66578432 linear /dev/nvme1n1 65211616" | dmsetup create test20
+echo "0 2880 linear /dev/nvme1n1 78494395" | dmsetup create test21
+echo "0 66578432 linear /dev/nvme1n1 135962072" | dmsetup create test22
+echo "0 66578432 linear /dev/nvme1n1 143565848" | dmsetup create test23
+echo "0 2880 linear /dev/nvme1n1 151568547" | dmsetup create test24
+echo "0 66578432 linear /dev/nvme1n1 199991512" | dmsetup create test25
+echo "0 524286 linear /dev/nvme1n1 236763088" | dmsetup create test26
+echo "0 524286 linear /dev/nvme1n1 236763094" | dmsetup create test27
+echo "0 524286 linear /dev/nvme1n1 238755488" | dmsetup create test28
+echo "0 524286 linear /dev/nvme1n1 238755494" | dmsetup create test29
+echo "0 524286 linear /dev/nvme1n1 246742232" | dmsetup create test30
+echo "0 524286 linear /dev/nvme1n1 246742238" | dmsetup create test31
+echo "0 66578432 linear /dev/nvme1n1 249265832" | dmsetup create test32
+echo "0 524286 linear /dev/nvme1n1 250101584" | dmsetup create test33
+echo "0 524286 linear /dev/nvme1n1 250101590" | dmsetup create test34
+echo "0 524286 linear /dev/nvme1n1 268642496" | dmsetup create test35
+echo "0 524286 linear /dev/nvme1n1 268642502" | dmsetup create test36
+echo "0 524272 linear /dev/nvme1n1 317509968" | dmsetup create test37
+echo "0 524286 linear /dev/nvme1n1 385246608" | dmsetup create test38
+echo "0 524286 linear /dev/nvme1n1 385246614" | dmsetup create test39
+echo "0 524272 linear /dev/nvme1n1 399506024" | dmsetup create test40
+echo "0 66578432 linear /dev/nvme1n1 412276720" | dmsetup create test41
+
+interface_write()
+ 
+No partition found or selected for recovery
+simulate write!
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=500118191 (expected 500118191)
+hdr_lba_start=2048
+hdr_lba_end=500118158
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+ 1 P EFI System                  4096     618495     614400
+ 2 P Linux filesys. data       618496  500117503  499499008 [root]
+search_superblock
+Partition table type (auto): EFI GPT
+Disk /dev/nvme1n1 - 256 GB / 238 GiB - XrayDisk 256GB
+Partition table type: EFI GPT
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=500118191 (expected 500118191)
+hdr_lba_start=2048
+hdr_lba_end=500118158
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+ 1 P EFI System                  4096     618495     614400
+ 2 P Linux filesys. data       618496  500117503  499499008 [root]
+Incomplete image created.
+disk_image write() failed: Não há espaço disponível no dispositivo
+No space left for the file image.
+
+ 2 P Linux filesys. data       618496  500117503  499499008 [root]
+Support for this filesystem wasn't enabled during compilation.
+search_superblock
+
+SIGINT detected! PhotoRec has been killed.
+TestDisk exited normally.
