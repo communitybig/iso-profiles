@@ -141,7 +141,7 @@ xfce4-docklike-plugin
 biglinux-xfwm-axiomd-theme # ALTERAR COMMUNITY
 
 # Utilities
-biglinux-settings
+#biglinux-settings
 comm-wallpapers-xfce
 comm-xfce-config
 ds4-disable-led
