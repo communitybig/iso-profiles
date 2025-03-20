@@ -141,7 +141,7 @@ xfce4-docklike-plugin
 biglinux-xfwm-axiomd-theme # ALTERAR COMMUNITY
 
 # Utilities
-biglinux-settings
+#biglinux-settings
 comm-wallpapers-xfce
 comm-xfce-config
 ds4-disable-led
@@ -190,7 +190,6 @@ compsize
 debtap-mod
 hplip
 ipp-usb
-iso2usb
 manjaro-application-utility
 manjaro-printer
 pamac-updates-menu
