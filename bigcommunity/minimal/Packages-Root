@@ -49,6 +49,9 @@ bash-completion  # Programmable completion for the bash shell
 #SSH SERVER
 openssh          # SSH protocol implementation for remote login, command execution and file transfer
 
+# Apps Biglinux
+biglinux-nano-config
+
 # Keyrings (chaves de repositório)
 community-keyring  # Chaves de assinatura para pacotes da Community
 biglinux-keyring   # Chaves de assinatura para pacotes do BigLinux
@@ -59,9 +62,9 @@ bigcommunity-name    # Identificação da comunidade BigLinux
 comm-minimal-config  # Configuração minimal da comunidade
 
 # Aplicativos do Chili
-chili-nano-config  # Configuração personalizada para o editor de texto nano
-chili-utils        # Conjunto de utilitários do Chili
-chili-clonedisk    # Ferramenta para clonagem de discos
+#chili-nano-config  # Configuração personalizada para o editor de texto nano
+#chili-utils        # Conjunto de utilitários do Chili
+#chili-clonedisk    # Ferramenta para clonagem de discos
 
 # Utilitários essenciais
 rsync       # Sincronização e cópia eficiente de arquivos via rede ou localmente
