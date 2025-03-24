@@ -2,4 +2,3 @@ biglinux-systemd-swap
 comm-minimal-config
 fast-mkinitcpio
 mkinitcpio
-polkit
