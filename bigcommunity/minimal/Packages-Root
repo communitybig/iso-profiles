@@ -24,7 +24,7 @@ jfsutils         # Ferramentas para gerenciar sistemas de arquivos JFS
 #lvm2             # Gerenciador de volumes lógicos (LVM)
 #device-mapper    # Ferramenta para criar dispositivos mapeados, usado pelo LVM
 #dmraid           # Suporte para RAID via firmware (Fake RAID)
-#mdadm            # Gerenciador de RAID por software
+mdadm            # Gerenciador de RAID por software
 
 # Bootloader e inicialização
 #diffutils        # Utilitários para comparar arquivos e diretórios (diff, cmp, etc.)
