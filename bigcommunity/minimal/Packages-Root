@@ -59,7 +59,7 @@ chili-keyring      # Chaves de assinatura para pacotes do Chili
 
 # Aplicativos da comunidade
 bigcommunity-name    # Identificação da comunidade BigLinux
-comm-minimal-config  # Configuração minimal da comunidade
+#comm-minimal-config  # Configuração minimal da comunidade (movido para Root-install)
 
 # Aplicativos do Chili
 #chili-nano-config  # Configuração personalizada para o editor de texto nano
