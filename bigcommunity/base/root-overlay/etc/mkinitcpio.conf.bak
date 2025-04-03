@@ -4,7 +4,7 @@
 # run.  Advanced users may wish to specify all system modules
 # in this array.  For instance:
 #     MODULES=(usbhid xhci_hcd)
-MODULES=(nvidia? nvidia_modeset? nvidia_uvm? nvidia_drm?)
+MODULES=()
 
 # BINARIES
 # This setting includes any additional binaries a given user may
@@ -49,7 +49,9 @@ FILES=""
 #
 ##   NOTE: If you have /usr on a separate partition, you MUST include the
 #    usr and fsck hooks.
-HOOKS="base udev autodetect modconf kms plymouth block filesystems"
+#HOOKS="base udev autodetect modconf kms plymouth block filesystems"
+#HOOKS=(base udev autodetect modconf kms plymouth keyboard keymap consolefont block mdadm_udev encrypt filesystems fsck)
+HOOKS=(base udev autodetect modconf kms plymouth keyboard keymap consolefont block mdadm_udev filesystems fsck)
 
 # COMPRESSION
 # Use this to compress the initramfs image. By default, gzip compression
@@ -70,4 +72,4 @@ COMPRESSION_OPTIONS=(-6)
 # Decompress kernel modules during initramfs creation.
 # Enable to speedup boot process, disable to save RAM
 # during early userspace. Switch (yes/no).
- MODULES_DECOMPRESS="yes"
+MODULES_DECOMPRESS="yes"

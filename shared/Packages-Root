@@ -112,16 +112,12 @@ xz
 biglinux-bash-config
 biglinux-keyring
 biglinux-driver-manager
-#biglinux-nano-config
+biglinux-nano-config
 biglinux-vim-config
 big-preload
 
 ### COMMUNITY
 community-keyring
-chili-nano-config
-
-### CHILI
-chili-utils
 
 ## Visual/theme
 bigicons-papient

@@ -41,6 +41,7 @@ cinnamon-remove-application
 cinnamon-sounds
 cinnamon-translations
 folder-color-nemo
+gapless
 gnome-calculator
 gnome-disk-utility
 gnome-keyring
@@ -165,7 +166,6 @@ lightdm-slick-greeter
 # System Utilities
 >extra fwupd
 android-tools
-big-store
 biglinux-systemd-swap
 # biglinux-updates-tweaks
 bluez-cups
@@ -173,7 +173,6 @@ compsize
 debtap-mod
 hplip
 ipp-usb
-iso2usb
 manjaro-application-utility
 manjaro-printer
 pamac-updates-menu

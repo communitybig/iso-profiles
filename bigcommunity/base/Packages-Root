@@ -157,10 +157,6 @@ biglinux-systemd-swap   # Script for creating hybrid swap space from zram swaps,
 #broadcom-bt-firmware-git
 upd72020x-fw            # Renesas uPD720201 / uPD720202 USB 3.0 chipsets firmware
 
-# Necessário para instalar o meta pacote comm-hyprland
-webkit2gtk              # Web content engine for GTK
-webkit2gtk-4.1          # Web content engine for GTK
-
 #necessário para chili-xrandr
 umc                     # Universal Modeline Calculator (UMC) - Calculadora de Modelines para Xorg
 libxcvt                 # library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator
@@ -172,3 +168,8 @@ faster-mkinitcpio       # Change to mkinitcpio run faster
 usb_modeswitch          # Activating switchable USB devices on Linux
 paru                    # Feature packed AUR helper
 compsize                # Calculate compression ratio of a set of files on Btrfs
+
+# Necessário para instalar o meta pacote comm-hyprland
+#webkit2gtk              # Web content engine for GTK
+#webkit2gtk-4.1          # Web content engine for GTK
+
