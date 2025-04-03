@@ -33,11 +33,10 @@ ttf-roboto-slab
 
 # GNOME Applications
 adw-gtk-theme
-#amberol
 baobab
 blueberry
+celluloid
 dconf-editor
-# evince
 file-roller
 fragments
 gapless # Play your music elegantly (AKA: G4Music)
@@ -78,7 +77,6 @@ papers
 power-profiles-daemon
 python-nautilus
 rygel
-showtime
 simple-scan
 #sushi
 sync-gnome-theme-to-qt # Pacote Biglinux
