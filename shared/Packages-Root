@@ -193,6 +193,7 @@ spice-vdagent
 
 ## Others
 fastfetch
+webp-pixbuf-loader
 
 # para testes
 glibc-locales
