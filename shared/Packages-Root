@@ -175,6 +175,9 @@ wireplumber
 chmlib
 tesseract-data-spa
 
+## Support
+sshx
+
 ## Video and Driver Support
 biglinux-vaapi
 libva-intel-driver
